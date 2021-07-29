@@ -36,9 +36,9 @@ if ip == 'moi':
 #######################################################
     import requests
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
-    saver_2=input(f"{sr}Nhập id saver: ")
+    saver_2=input("Nhập id saver: ")
     if saver_2 == saver_1:
-            print(f"{sr} Saver hoạt động")
+            print("Saver hoạt động")
     else:
         print(f"{sr} saver ngừng hoạt động!!!")
         exit()
@@ -53,11 +53,11 @@ if ip == 'cu':
     os.system('clear')
     import requests
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
-    saver_2=input(f"{sr}Nhập id saver: ")
+    saver_2=input("Nhập id saver: ")
     if saver_2 == saver_1:
             print(f"{sr} Saver hoạt động")
     else:
-        print(f"{sr} saver ngừng hoạt động!!!")
+        print("saver ngừng hoạt động!!!")
         exit()
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
