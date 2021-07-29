@@ -76,4 +76,4 @@ if ip == 'cu':
         os.system('php vustar.php')
     if nhap == '2':
         os.system('cd zphisher')
-        os.system('bash zphisher.sh)
+        os.system('bash zphisher.sh')
