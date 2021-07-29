@@ -10,7 +10,7 @@ if ip == 'moi':
     os.system('wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip')
     os.system('pkg install php')
     os.system('pkg install curl')
-    os.system('apt upgrade)
+    os.system('apt upgrade')
     os.system('git clone https://github.com/htr-tech/zphisher.git') #đổi nhv
     os.system('ls')
     os.system('chmod +x zphisher')
