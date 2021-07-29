@@ -33,13 +33,16 @@ if ip == 'moi':
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
 #     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
+#######################################################
     import requests
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG')
-    if saver_1 =='on':
-        print('Saver hoạt đông')
-    if saver_1 =='off':
-        print('Saver ngừng hoạt đông')
+    saver_2=(f"{sr}on")
+    if saver_1 == saver_2:
+            print(f"{sr} Saver hoạt động")
+     else:
+        print(f"{sr} saver ngừng hoạt động!!!")
         exit()
+        #########################
     nhap=input('Nhập: ')
     if nhap == '1':
         os.system('php vustar.php')
@@ -50,10 +53,11 @@ if ip == 'cu':
     os.system('clear')
     import requests
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG')
-    if saver_1 =='on':
-        print('Saver hoạt đông')
-    if saver_1 =='off':
-        print('Saver ngừng hoạt đông')
+    saver_2=(f"{sr}on")
+    if saver_1 == saver_2:
+            print(f"{sr} Saver hoạt động")
+     else:
+        print(f"{sr} saver ngừng hoạt động!!!")
         exit()
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
