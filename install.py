@@ -20,11 +20,11 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        print('pass2')
+        print('saver đóng')
         exit()
     
 if ip == 'cu':
-    os.system('cd')
+    os.system('clear')
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
 #     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
