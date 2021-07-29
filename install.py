@@ -88,6 +88,7 @@ if ip == 'cu':
             os.system('cd zphisher')
             os.system('bash zphisher.sh')
         if install_sv=='2':
-            os.system('chmod +x zphisher')
+#             os.system('chmod +x zphisher')
             os.system('cd zphisher')
-            os.system('bash zphisher.sh')
+#             os.system('bash zphisher.sh')
+            os.system('ls')
