@@ -9,7 +9,7 @@ ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
 saver=requests.get('https://pastebin.com/raw/gs1sP0JG')
 if saver=='on':
     print('saver hoạt động')
-if saver = 'off':
+if saver == 'off':
     print('saver đóng')
     exit()
 if ip == 'moi':
