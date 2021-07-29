@@ -35,9 +35,9 @@ if ip == 'moi':
 #     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
 #######################################################
     import requests
-    saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG')
-    saver_2=(f"{sr}on")
-    if saver_1 == saver_2:
+    saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
+    saver_2=input(f"{sr}Nhập id saver: ")
+    if saver_2 == saver_1:
             print(f"{sr} Saver hoạt động")
     else:
         print(f"{sr} saver ngừng hoạt động!!!")
@@ -52,9 +52,9 @@ if ip == 'moi':
 if ip == 'cu':
     os.system('clear')
     import requests
-    saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG')
-    saver_2=(f"{sr}on")
-    if saver_1 == saver_2:
+    saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
+    saver_2=input(f"{sr}Nhập id saver: ")
+    if saver_2 == saver_1:
             print(f"{sr} Saver hoạt động")
     else:
         print(f"{sr} saver ngừng hoạt động!!!")
