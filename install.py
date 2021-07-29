@@ -39,7 +39,7 @@ if ip == 'moi':
     saver_2=(f"{sr}on")
     if saver_1 == saver_2:
             print(f"{sr} Saver hoạt động")
-     else:
+    else:
         print(f"{sr} saver ngừng hoạt động!!!")
         exit()
         #########################
@@ -56,7 +56,7 @@ if ip == 'cu':
     saver_2=(f"{sr}on")
     if saver_1 == saver_2:
             print(f"{sr} Saver hoạt động")
-     else:
+    else:
         print(f"{sr} saver ngừng hoạt động!!!")
         exit()
     print('Nhập [1] Truy cập tool tds')
