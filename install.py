@@ -15,15 +15,12 @@ if ip == 'y':
     print('Bạn muốn:')
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
-    print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
+#     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
     nhap=input('Nhập: ')
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
         print('pass2')
-        exit()
-    if nhap == '3':
-        print('cd saver\nphp vustar.php')
         exit()
     
 if ip == 'n':
