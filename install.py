@@ -10,9 +10,10 @@ if ip == 'y':
     os.system('pkg install curl')
     os.system('clear')
     os.system('cd')
-    os.system('ls')
     print('Cài đặt hoàn tất!!')
-    print('nhập cd để quay lại')
+    print('Bạn muốn:')
+    print('Truy cập tds nhập: php vustar.php')
+    print('Truy cập saver hacker nhập: vũ đẹp trai')
     exit()
     
 if ip == 'n':
