@@ -23,7 +23,7 @@ if ip == 'y':
         print('pass2')
         exit()
     if nhap == '3':
-        print('cd saver\php vustar.php')
+        print('cd saver\nphp vustar.php')
         exit()
     
 if ip == 'n':
