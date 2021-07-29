@@ -1,19 +1,20 @@
 import os,sys,re,json
-import requests
-os.system('pip install requests')
+# import requests
+# os.system('pip install requests')
 # os.system('pip install response')
 # os.system('pip install object')
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
-saver=requests.get('https://pastebin.com/raw/gs1sP0JG')
-if saver=='on':
-    print('saver hoạt động')
-if saver == 'off':
-    print('saver đóng')
-    exit()
+# saver=requests.get('https://pastebin.com/raw/gs1sP0JG')
+# if saver=='on':
+#     print('saver hoạt động')
+# if saver == 'off':
+#     print('saver đóng')
+#     exit()
 if ip == 'moi':
     os.system('termux-setup-storage')
+    os.system('pip install requests')
     os.system('pkg update')
     os.system('pkg upgrade')
     os.system('pkg install wget')
@@ -32,6 +33,13 @@ if ip == 'moi':
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
 #     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
+    import requests
+    saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG')
+    if saver_1 =='on':
+        print('Saver hoạt đông')
+    if saver_1 =='off':
+        print('Saver ngừng hoạt đông')
+        exit()
     nhap=input('Nhập: ')
     if nhap == '1':
         os.system('php vustar.php')
@@ -40,6 +48,13 @@ if ip == 'moi':
     
 if ip == 'cu':
     os.system('clear')
+    import requests
+    saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG')
+    if saver_1 =='on':
+        print('Saver hoạt đông')
+    if saver_1 =='off':
+        print('Saver ngừng hoạt đông')
+        exit()
     print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
 #     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
