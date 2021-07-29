@@ -9,8 +9,8 @@ ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
 saver=requests.get('https://pastebin.com/raw/gs1sP0JG')
 if saver=='on':
     print('saver hoạt động')
-else:
-    print('saver tạm ngừng hoạt động vui lòng thử lại sau')
+if saver = 'off':
+    print('saver đóng')
     exit()
 if ip == 'moi':
     os.system('termux-setup-storage')
