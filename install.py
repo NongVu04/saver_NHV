@@ -2,6 +2,12 @@ import os,sys
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
+saver=requests.get('https://pastebin.com/raw/gs1sP0JG')
+if saver=='on':
+    print('saver hoạt động')
+else:
+    print('saver tạm ngừng hoạt động vui lòng thử lại sau')
+    exit()
 if ip == 'moi':
     os.system('termux-setup-storage')
     os.system('pkg update')
