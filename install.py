@@ -55,6 +55,7 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
+        os.system('cd zphisher')
         os.system('bash zphisher.sh')
     
 if ip == 'cu':
@@ -63,7 +64,7 @@ if ip == 'cu':
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
     saver_2=input("Nhập id saver: ")
     if saver_2 == saver_1:
-            print(" Saver hoạt động")
+            print("Saver hoạt động")
     else:
         print("saver ngừng hoạt động!!!")
         exit()
@@ -74,4 +75,5 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash zphisher.sh')
+        os.system('cd zphisher')
+        os.system('bash zphisher.sh)
