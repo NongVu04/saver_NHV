@@ -29,19 +29,27 @@ if ip == 'moi':
     os.system('clear')
     os.system('cd')
     print('Cài đặt hoàn tất!!')
-    print('Bạn muốn:')
-    print('Nhập [1] Truy cập tool tds')
-    print('Nhập [2] Truy cập saver hacker')
-#     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
-#######################################################
     import requests
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
     saver_2=input("Nhập id saver: ")
     if saver_2 == saver_1:
             print("Saver hoạt động")
     else:
-        print(f"{sr} saver ngừng hoạt động!!!")
+        print("saver ngừng hoạt động!!!")
         exit()
+    print('Bạn muốn:')
+    print('Nhập [1] Truy cập tool tds')
+    print('Nhập [2] Truy cập saver hacker')
+#     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
+#######################################################
+#     import requests
+#     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
+#     saver_2=input("Nhập id saver: ")
+#     if saver_2 == saver_1:
+#             print("Saver hoạt động")
+#     else:
+#         print(f"{sr} saver ngừng hoạt động!!!")
+#         exit()
         #########################
     nhap=input('Nhập: ')
     if nhap == '1':
