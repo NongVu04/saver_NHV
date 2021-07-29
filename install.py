@@ -1,7 +1,8 @@
 import os,sys,re,json
 import requests
 os.system('pip install requests')
-os.system('pip install resqonse')
+os.system('pip install response')
+os.system('pip install object')
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
