@@ -92,3 +92,4 @@ if ip == 'cu':
             os.system('cd zphisher')
 #             os.system('bash zphisher.sh')
             os.system('ls')
+            os.system('cd ')
