@@ -24,7 +24,7 @@ if ip == 'moi':
         exit()
     
 if ip == 'cu':
-print('Nhập [1] Truy cập tool tds')
+    print('Nhập [1] Truy cập tool tds')
     print('Nhập [2] Truy cập saver hacker')
 #     print('Nhập [3] Xem hướng dẫn cho những lần truy cập sau')
     nhap=input('Nhập: ')
