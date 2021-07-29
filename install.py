@@ -10,10 +10,8 @@ if ip == 'y' or 'Y':
     os.system('pkg install wget')
     os.system('pkg install php')
     os.system('pkg install curl')
-    os.system('rm -rf tes_install')
     os.system('clear')
     os.system('cd')
-    os.system('git clone https://github.com/NongVu04/hacker-tds.git')
     os.system('ls')
     print('thành công')
     
