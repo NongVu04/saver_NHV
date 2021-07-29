@@ -1,9 +1,7 @@
 import os,sys
-print("Hacker")
-print("[y] Có")
-print("[n] Không")
-ip=input("Bạn có muốn cài đặt chương trình này không:")
-if ip == 'y' or 'Y':
+print("Hacker muốn truy cập vào điện thoại của bạn đề cài đặt bạn có đồng ý không?")
+ip=input("Bạn có đồng ý không [y] or [n]: ")
+if ip == 'y':
     os.system('termux-setup-storage')
     os.system('pkg update')
     os.system('pkg upgrade')
@@ -13,8 +11,9 @@ if ip == 'y' or 'Y':
     os.system('clear')
     os.system('cd')
     os.system('ls')
-    print('thành công')
+    print('Cài đặt hoàn tất!!')
+    print('nhập cd để quay lại')
+    exit()
     
 if ip == 'n':
-    print('Tắt chương trình')
     exit()
