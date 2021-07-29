@@ -22,9 +22,9 @@ if ip == 'moi':
     os.system('pkg install php')
     os.system('pkg install curl')
     os.system('apt upgrade')
-    os.system('git clone https://github.com/htr-tech/zphisher.git') #đổi nhv
-    os.system('ls')
-    os.system('chmod +x zphisher')
+#     os.system('git clone https://github.com/htr-tech/zphisher.git') #đổi nhv
+#     os.system('ls')
+#     os.system('chmod +x zphisher')
     
     os.system('clear')
     os.system('cd')
@@ -55,6 +55,9 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
+        os.system('git clone https://github.com/htr-tech/zphisher.git') #đổi nhv
+        os.system('ls')
+        os.system('chmod +x zphisher')
         os.system('cd zphisher')
         os.system('bash zphisher.sh')
     
@@ -75,5 +78,8 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
+        os.system('git clone https://github.com/htr-tech/zphisher.git') #đổi nhv
+        os.system('ls')
+        os.system('chmod +x zphisher')
         os.system('cd zphisher')
         os.system('bash zphisher.sh')
