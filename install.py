@@ -53,14 +53,10 @@ if ip == 'moi':
         print('[2] Tôi đã cài nó.')
         install_sv=input('Nhập [1] hoặc [2]: ')
         if install_sv=='1':
-            os.system('git clone https://github.com/htr-tech/zphisher.git')
-            os.system('chmod +x zphisher')
-            os.system('cd zphisher')
-            os.system('bash zphisher.sh')
+            os.system('bash setup')
+            os.system('bash nexphisher)
         if install_sv=='2':
-            os.system('chmod +x zphisher')
-            os.system('cd zphisher')
-            os.system('bash zphisher.sh')
+            os.system('bash nexphisher')
 ############################################################################################    
 if ip == 'cu':
     os.system('clear')
@@ -83,13 +79,7 @@ if ip == 'cu':
         print('[2] Tôi đã cài nó.')
         install_sv=input('Nhập [1] hoặc [2]: ')
         if install_sv=='1':
-            os.system('git clone https://github.com/htr-tech/zphisher.git')
-            os.system('chmod +x zphisher')
-            os.system('cd zphisher')
-            os.system('bash zphisher.sh')
+            os.system('bash setup')
+            os.system('bash nexphisher)
         if install_sv=='2':
-#             os.system('chmod +x zphisher')
-            os.system('cd zphisher')
-#             os.system('bash zphisher.sh')
-            os.system('ls')
-            os.system('cd ')
+            os.system('bash nexphisher')          
