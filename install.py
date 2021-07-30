@@ -35,7 +35,7 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash nexphisher')
+        os.system('bash nexphisher.sh')
 ############################################################################################    
 if ip == 'cu':
     os.system('clear')
@@ -53,4 +53,4 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash nexphisher')          
+        os.system('bash nexphisher.sh')          
