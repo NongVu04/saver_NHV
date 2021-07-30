@@ -12,8 +12,8 @@ if ip == 'moi':
     os.system('pkg install php')
     os.system('pkg install curl')
     os.system('apt upgrade')  
-    os.system('bash setup')
-    os.system('bash tmux_setup')
+#     os.system('bash setup')
+#     os.system('bash tmux_setup')
     os.system('clear')
 ########################################################
     print('Cài đặt hoàn tất!!')
@@ -35,6 +35,8 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
+        os.system('bash tmux_setup')
+        os.system('bash setup')
         os.system('bash nexphisher.sh')
 ############################################################################################    
 if ip == 'cu':
