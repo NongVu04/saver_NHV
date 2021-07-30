@@ -37,7 +37,7 @@ if ip == 'moi':
     if nhap == '2':
         os.system('bash tmux_setup')
         os.system('bash setup')
-        os.system('bash nexphisher.sh')
+        os.system('bash nexphisher')
 ############################################################################################    
 if ip == 'cu':
     os.system('clear')
@@ -55,4 +55,4 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash nexphisher.sh')          
+        os.system('bash nexphisher')          
