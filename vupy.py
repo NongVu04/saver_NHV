@@ -2,7 +2,7 @@ import sys, os, re, json, requests
 from datetime import datetime
 from time import sleep
 import random
-sv_off="""
+sv_off="""\033[1;33m
 ╔═════════════════════════════════════════════════════════╗
 ║         Saver Đã Dừng                                   ║
 ╚═════════════════════════════════════════════════════════╝
