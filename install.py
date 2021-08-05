@@ -1,5 +1,4 @@
 import os,sys,re,json
-print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
@@ -19,6 +18,7 @@ if ip == 'moi':
 ########################################################
     print('Cài đặt hoàn tất!!')
     import requests
+    print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
     saver_2=input("Nhập id saver: ")
     if saver_2 == saver_1:
@@ -52,6 +52,7 @@ if ip == 'moi':
 if ip == 'cu':
     os.system('clear')
     import requests
+    print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
     saver_2=input("Nhập id saver: ")
     if saver_2 == saver_1:
