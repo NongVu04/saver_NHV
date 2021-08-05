@@ -69,7 +69,7 @@ if ip == 'cu':
     if nhap == '3':
         os.system('python vupy.py')
     if nhap == '4':
-        os.system('cd')
-        os.system('enter')
+        os.system('exit')
+        # os.system('ente')
         os.system('rm -rf saver_NHV')
         os.system('ls')
