@@ -39,6 +39,8 @@ if ip == 'moi':
         os.system('bash tmux_setup')
         os.system('bash setup')
         os.system('bash nexphisher')
+     if nhap == '3':
+        os.system('python vupy.py')
 ############################################################################################    
 if ip == 'cu':
     os.system('clear')
@@ -59,4 +61,4 @@ if ip == 'cu':
     if nhap == '2':
         os.system('bash nexphisher') 
     if nhap == '3':
-        os.system('python vu.py')
+        os.system('python vupy.py')
