@@ -26,8 +26,9 @@ if ip == 'moi':
         print("saver ngừng hoạt động!!!")
         exit()
     print('Bạn muốn:')
-    print('Nhập [1] Truy cập tool tds')
+    print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
+    print('Nhập [3] Truy cập tool tds python')
     
 #######################################################
 
@@ -49,10 +50,13 @@ if ip == 'cu':
     else:
         print("saver ngừng hoạt động!!!")
         exit()
-    print('Nhập [1] Truy cập tool tds')
+    print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
+    print('Nhập [3] Truy cập tool tds python')
     nhap=input('Nhập: ')
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash nexphisher')          
+        os.system('bash nexphisher') 
+    if nhap == '3':
+        os.system('python vu.py')
