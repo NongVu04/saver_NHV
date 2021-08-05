@@ -60,6 +60,7 @@ if ip == 'cu':
     print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
     print('Nhập [3] Truy cập tool tds python')
+    print('Nhập [4] Để Update')
     nhap=input('Nhập: ')
     if nhap == '1':
         os.system('php vustar.php')
@@ -69,5 +70,6 @@ if ip == 'cu':
         os.system('python vupy.py')
     if nhap == '4':
         os.system('cd')
+        os.system('enter')
         os.system('rm -rf saver_NHV')
         os.system('ls')
