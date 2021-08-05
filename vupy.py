@@ -37,13 +37,9 @@ if 'on' in saver_NV:
 	print(sv)
 	print("Ghi Chú: "+print_tex)
 else:
-	cd=input('Nhập Mã Update: ')
-	if cd == '1':
-		os.system("clear")
-		print('Bảo trì')
-	else:
-		exit('Nhập sai!!')
-
+	print(sv_off)
+	print(print_tex)
+	exit('Đóng!!!')
 a = "\033[1;33mTools By "
 b = "Nông Hoàng Vũ"
 for x in a + b:
