@@ -29,7 +29,7 @@ if ip == 'moi':
     print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
     print('Nhập [3] Truy cập tool tds python')
-    print('Nhập [4] Để Update')
+    # print('Nhập [4] Để Update')
     
 #######################################################
 
@@ -42,10 +42,10 @@ if ip == 'moi':
         os.system('bash nexphisher')
     if nhap == '3':
         os.system('python vupy.py')
-    if nhap == '4':
-        os.system('cd')
-        os.system('rm -rf saver_NHV')
-        os.system('ls')
+    # if nhap == '4':
+    #     os.system('cd')
+    #     os.system('rm -rf saver_NHV')
+    #     os.system('ls')
 ############################################################################################    
 if ip == 'cu':
     os.system('clear')
@@ -60,7 +60,7 @@ if ip == 'cu':
     print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
     print('Nhập [3] Truy cập tool tds python')
-    print('Nhập [4] Để Update')
+    # print('Nhập [4] Để Update')
     nhap=input('Nhập: ')
     if nhap == '1':
         os.system('php vustar.php')
@@ -68,8 +68,8 @@ if ip == 'cu':
         os.system('bash nexphisher') 
     if nhap == '3':
         os.system('python vupy.py')
-    if nhap == '4':
-        os.system('exit')
-        # os.system('ente')
-        os.system('rm -rf saver_NHV')
-        os.system('ls')
+    # if nhap == '4':
+    #     os.system('exit')
+    #     # os.system('ente')
+    #     os.system('rm -rf saver_NHV')
+    #     os.system('ls')
