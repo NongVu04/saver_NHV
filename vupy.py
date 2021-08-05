@@ -4,7 +4,7 @@ from time import sleep
 import random
 sv_off="""
 ╔═════════════════════════════════════════════════════════╗
-║         Saver Đã Dừng Vui Lòng Cập Nhật Tools           ║
+║         Saver Đã Dừng                                   ║
 ╚═════════════════════════════════════════════════════════╝
 """
 DN="""
@@ -39,7 +39,7 @@ if 'on' in saver_NV:
 else:
 	print(sv_off)
 	print(print_tex)
-	exit('Đóng!!!')
+	exit()
 a = "\033[1;33mTools By "
 b = "Nông Hoàng Vũ"
 for x in a + b:
