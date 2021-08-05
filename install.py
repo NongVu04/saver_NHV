@@ -1,4 +1,14 @@
 import os,sys,re,json
+sv="""
+╔═════════════════════════════════════════════════════════╗
+║                    Saver Đã Dừng                        ║
+╚═════════════════════════════════════════════════════════╝
+"""
+svo="""
+╔═════════════════════════════════════════════════════════╗
+║              Saver Đã Được Kích Hoạt                    ║
+╚═════════════════════════════════════════════════════════╝
+"""
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
@@ -20,11 +30,10 @@ if ip == 'moi':
     import requests
     print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
-    saver_2=input("Nhập id saver: ")
-    if saver_2 == saver_1:
-            print("Saver hoạt động")
+    if saver_1== 'on':
+            print(svo)
     else:
-        print("saver ngừng hoạt động!!!")
+        print(sv)
         exit()
     print('Bạn muốn:')
     print("Ghi Chú: "+print_tex)
@@ -54,11 +63,10 @@ if ip == 'cu':
     import requests
     print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
-    saver_2=input("Nhập id saver: ")
-    if saver_2 == saver_1:
-            print("Saver hoạt động")
+    if saver_1 == 'on':
+            print(sv0)
     else:
-        print("saver ngừng hoạt động!!!")
+        print(sv)
         exit()
     print("Ghi Chú: "+print_tex)
     print('Nhập [1] Truy cập tool tds php')
