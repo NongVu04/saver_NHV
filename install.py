@@ -1,4 +1,5 @@
 import os,sys,re,json
+print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
@@ -26,6 +27,7 @@ if ip == 'moi':
         print("saver ngừng hoạt động!!!")
         exit()
     print('Bạn muốn:')
+    print("Ghi Chú: "+print_tex)
     print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
     print('Nhập [3] Truy cập tool tds python')
@@ -57,6 +59,7 @@ if ip == 'cu':
     else:
         print("saver ngừng hoạt động!!!")
         exit()
+    print("Ghi Chú: "+print_tex)
     print('Nhập [1] Truy cập tool tds php')
     print('Nhập [2] Truy cập saver hacker')
     print('Nhập [3] Truy cập tool tds python')
