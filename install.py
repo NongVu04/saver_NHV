@@ -64,7 +64,7 @@ if ip == 'cu':
     print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
     saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
     if saver_1 == 'on':
-            print(sv0)
+            print(svo)
     else:
         print(sv)
         exit()
