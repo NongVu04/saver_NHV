@@ -41,8 +41,8 @@ else:
 	print(print_tex)
 	exit()
 a = "\033[1;33mTools By "
-b = "Nông Hoàng Vũ"
-for x in a + b + print_tex:
+b = "Nông Hoàng Vũ "
+for x in a + b +'\n' + sv:
 	print(x, end='', flush=True)
 	sleep(0.1)
 print()
