@@ -12,7 +12,7 @@ svo="""
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
-if ip == 'moi':
+if ip == 'moi' or 'Moi':
     os.system('termux-setup-storage')
     os.system('pip install requests')
     os.system('pkg update')
@@ -64,7 +64,7 @@ if ip == 'moi':
     #     os.system('rm -rf saver_NHV')
     #     os.system('ls')
 ############################################################################################    
-if ip == 'cu':
+if ip == 'cu' or 'Cu':
     os.system('clear')
     import requests
     print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
