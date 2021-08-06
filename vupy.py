@@ -135,6 +135,7 @@ while True:
 			print(f'\033[1;37m[{dem}] ● \033[1;32m{t} ● \033[1;36mFollow ● \033[1;33m{idsub} ● \033[1;31m+600 ● \033[1;33m'+str(nhan['data']['xu'])+" Xu")
 			for demtg in range(dl, -1, -1):
 				print('\033[1;33mVui Lòng Đợi '+str(demtg)+'   ',end='\r')
+				sleep(1)
 		else:
 			print('Thất Bại id: '+idsub,end='\r')
 	else:
