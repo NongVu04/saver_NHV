@@ -48,9 +48,13 @@ if ip == 'moi':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash tmux_setup')
-        os.system('bash setup')
-        os.system('bash nexphisher')
+        nx=input('Bạn có muốn cài chương trình không? (y/n): ')
+        if nx == 'y' or 'Y':
+            os.system('bash setup')
+        else:
+            os.system('bash tmux_setup')
+            os.system('bash setup')
+            os.system('bash nexphisher')
     if nhap == '3':
         os.system('python vupy.py')
     # if nhap == '4':
@@ -77,7 +81,13 @@ if ip == 'cu':
     if nhap == '1':
         os.system('php vustar.php')
     if nhap == '2':
-        os.system('bash nexphisher') 
+        nx=input('Bạn có muốn cài chương trình không? (y/n): ')
+        if nx == 'y' or 'Y':
+            os.system('bash setup')
+        else:
+            os.system('bash tmux_setup')
+            os.system('bash setup')
+            os.system('bash nexphisher')
     if nhap == '3':
         os.system('python vupy.py')
     # if nhap == '4':
