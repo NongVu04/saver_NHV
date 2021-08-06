@@ -100,3 +100,5 @@ if ip == 'cu' or 'Cu':
     #     # os.system('ente')
     #     os.system('rm -rf saver_NHV')
     #     os.system('ls')
+    else:
+        exit('Đã thoát')
