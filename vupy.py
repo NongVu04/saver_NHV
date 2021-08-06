@@ -19,7 +19,7 @@ logo_NV="""
 ║Tool By Nông Hoàng Vũ                                    ║
 ║Học hack liên hệ zalo: 0766-359-238                      ║
 ║Tool 1 chức năng                                         ║
-║Ngày Cập Nhật: 05-08-2021                                ║
+║Ngày Cập Nhật: 06-08-2021                                ║
 ║Đang hoạt động saver: 001                                ║
 ╚═════════════════════════════════════════════════════════╝
 """
@@ -34,15 +34,17 @@ saver_NV=requests.get("https://pastebin.com/raw/q3LFK99C").text
 check_key_NHV=requests.get("https://pastebin.com/raw/b2zNxppL").text
 
 if 'on' in saver_NV:
-	print(sv)
 	print("Ghi Chú: "+print_tex)
 else:
 	print(sv_off)
 	print(print_tex)
 	exit()
-a = "\033[1;33mTools By "
-b = "Nông Hoàng Vũ "
-for x in a + b +'\n' + sv:
+a = """
+╔═════════════════════════════════════════════════════════╗
+║              Tool By Nông Hoàng Vũ                      ║
+╚═════════════════════════════════════════════════════════╝
+"""
+for x in sv + '\n' a:
 	print(x, end='', flush=True)
 	sleep(0.1)
 print()
