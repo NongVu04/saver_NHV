@@ -49,11 +49,11 @@ if ip in 'i':
         os.system('php vustar.php')
     if nhap == '2':
         nx=input('Bạn có muốn cài chương trình không? (y/n): ')
-        if nx == 'Y' or 'y':
+        if nx in 'Y' or 'y':
             os.system('bash tmux_setup')
             os.system('bash setup')
             os.system('bash nexphisher')
-        if nx == 'n' or 'N':
+        if nx in 'n' or 'N':
             os.system('bash nexphisher')
         else:
             exit("Bạn chưa nhập gì")
@@ -84,11 +84,11 @@ if ip in 'u':
         os.system('php vustar.php')
     if nhap == '2':
         nx=input('Bạn có muốn cài chương trình không? (y/n): ')
-        if nx == 'Y' or 'y':
+        if nx in 'y' or 'Y':
             os.system('bash tmux_setup')
             os.system('bash setup')
             os.system('bash nexphisher')
-        if nx == 'n' or 'N':
+        if nx in 'n' or 'N':
             os.system('bash nexphisher')
         else:
             exit("Bạn chưa nhập gì")
