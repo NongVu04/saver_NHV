@@ -12,7 +12,7 @@ svo="""
 print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
 print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
 ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
-if ip in 'i':
+if ip == 'moi':
     os.system('termux-setup-storage')
     os.system('pip install requests')
     os.system('pkg update')
@@ -49,11 +49,11 @@ if ip in 'i':
         os.system('php vustar.php')
     if nhap == '2':
         nx=input('Bạn có muốn cài chương trình không? (y/n): ')
-        if nx in 'Y' or 'y':
+        if nx =='y':
             os.system('bash tmux_setup')
             os.system('bash setup')
             os.system('bash nexphisher')
-        if nx in 'n' or 'N':
+        if nx == 'n':
             os.system('bash nexphisher')
         else:
             exit("Bạn chưa nhập gì")
@@ -64,7 +64,7 @@ if ip in 'i':
     #     os.system('rm -rf saver_NHV')
     #     os.system('ls')
 ############################################################################################    
-if ip in 'u':
+if ip == 'cu':
     os.system('clear')
     import requests
     print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
@@ -84,11 +84,11 @@ if ip in 'u':
         os.system('php vustar.php')
     if nhap == '2':
         nx=input('Bạn có muốn cài chương trình không? (y/n): ')
-        if nx in 'y' or 'Y':
+        if nx == 'y':
             os.system('bash tmux_setup')
             os.system('bash setup')
             os.system('bash nexphisher')
-        if nx in 'n' or 'N':
+        if nx == 'n':
             os.system('bash nexphisher')
         else:
             exit("Bạn chưa nhập gì")
