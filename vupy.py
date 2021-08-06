@@ -44,7 +44,7 @@ a = """
 ║              Tool By Nông Hoàng Vũ                      ║
 ╚═════════════════════════════════════════════════════════╝
 """
-for x in sv + '\n' a:
+for x in sv + '\n' + a:
 	print(x, end='', flush=True)
 	sleep(0.1)
 print()
