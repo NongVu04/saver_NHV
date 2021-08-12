@@ -10,10 +10,8 @@ svo="""
 ╚═════════════════════════════════════════════════════════╝
 """
 os.system('clear')
-print('Hãy đảm bảo rằng mạng của bạn ổn đinh!')
-print("Hacker sẽ yêu cầu cấp quyền nếu bạn là người mới!!")
-ip=input("Bạn là người mới hay cũ [moi] hay [cu]: ")
-if ip == 'moi':
+ip=input("Press Enter to continue")
+if ip == 'data':
     os.system('termux-setup-storage')
     os.system('pip install requests')
     os.system('pkg update')
@@ -38,8 +36,8 @@ if ip == 'moi':
         exit()
     print('Bạn muốn:')
     print("Ghi Chú: "+print_tex)
-    print('Nhập [1] Truy cập tool tds php')
-    print('Nhập [2] Truy cập saver hacker')
+    print('Nhập [1] Truy cập tool tds php (Bảo trì)')
+    print('Nhập [2] Truy cập công cụ hacker')
     print('Nhập [3] Truy cập tool tds python')
     # print('Nhập [4] Để Update')
     
@@ -47,7 +45,9 @@ if ip == 'moi':
 
     nhap=input('Nhập: ')
     if nhap == '1':
-        os.system('php vustar.php')
+        # os.system('php vustar.php')
+        print('bảo trì!!')
+        exit()
     if nhap == '2':
         nx=input('Bạn có muốn cài chương trình không? (y/n): ')
         if nx =='y':
@@ -65,7 +65,7 @@ if ip == 'moi':
     #     os.system('rm -rf saver_NHV')
     #     os.system('ls')
 ############################################################################################    
-if ip == 'cu':
+if ip == '':
     os.system('clear')
     import requests
     print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
@@ -76,13 +76,15 @@ if ip == 'cu':
         print(sv)
         exit()
     print("Ghi Chú: "+print_tex)
-    print('Nhập [1] Truy cập tool tds php')
-    print('Nhập [2] Truy cập saver hacker')
+    print('Nhập [1] Truy cập tool tds php (Bảo trì)')
+    print('Nhập [2] Truy cập công cụ hacker')
     print('Nhập [3] Truy cập tool tds python')
     # print('Nhập [4] Để Update')
     nhap=input('Nhập: ')
     if nhap == '1':
-        os.system('php vustar.php')
+        # os.system('php vustar.php')
+        print("bảo trì!!")
+        exit()
     if nhap == '2':
         nx=input('Bạn có muốn cài chương trình không? (y/n): ')
         if nx == 'y':
