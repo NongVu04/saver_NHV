@@ -21,7 +21,7 @@ else:
     exit()
 print('Phiên Bản V1.1')
 print("Ghi Chú: "+print_tex)
-print('Nhập [0] Để update tool')
+print('Nhập [0] Để update tool và sửa lỗi')
 print('Nhập [1] Truy cập tool tds php (Bảo trì)')
 print('Nhập [2] Truy cập công cụ hacker')
 print('Nhập [3] Truy cập tool tds python')
