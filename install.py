@@ -10,7 +10,7 @@ svo="""
 ╚═════════════════════════════════════════════════════════╝
 """
 os.system('clear')
-ip=input("Press Enter to continue")
+ip=input("Press Enter to continue: " )
 if ip == 'data':
     os.system('termux-setup-storage')
     os.system('pip install requests')
@@ -36,6 +36,7 @@ if ip == 'data':
         exit()
     print('Bạn muốn:')
     print("Ghi Chú: "+print_tex)
+    print('Nhập [0] Để update tool')
     print('Nhập [1] Truy cập tool tds php (Bảo trì)')
     print('Nhập [2] Truy cập công cụ hacker')
     print('Nhập [3] Truy cập tool tds python')
@@ -44,6 +45,8 @@ if ip == 'data':
 #######################################################
 
     nhap=input('Nhập: ')
+    if nhap == '0':
+        os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
     if nhap == '1':
         # os.system('php vustar.php')
         print('bảo trì!!')
@@ -76,11 +79,14 @@ if ip == '':
         print(sv)
         exit()
     print("Ghi Chú: "+print_tex)
+    print('Nhập [0] Để update tool')
     print('Nhập [1] Truy cập tool tds php (Bảo trì)')
     print('Nhập [2] Truy cập công cụ hacker')
     print('Nhập [3] Truy cập tool tds python')
     # print('Nhập [4] Để Update')
     nhap=input('Nhập: ')
+    if nhap == '0':
+        os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
     if nhap == '1':
         # os.system('php vustar.php')
         print("bảo trì!!")
