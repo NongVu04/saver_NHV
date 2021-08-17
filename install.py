@@ -18,7 +18,7 @@ if saver_1== 'on':
 else:
     print(sv)
     exit()
-print('Bạn muốn:')
+print('Bạn muốn v1:')
 print("Ghi Chú: "+print_tex)
 print('Nhập [0] Để update tool')
 print('Nhập [1] Truy cập tool tds php (Bảo trì)')
