@@ -9,6 +9,7 @@ svo="""
 ║              Saver Đã Được Kích Hoạt                    ║
 ╚═════════════════════════════════════════════════════════╝
 """
+os.system('pip install requests')
 os.system('clear')
 import requests
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
@@ -26,7 +27,7 @@ print('Nhập [2] Truy cập công cụ hacker')
 print('Nhập [3] Truy cập tool tds python')
 nhap=input('Nhập: ')
 if nhap=='0':
-    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pip install requests&&pkg update&&pkg upgrade&&pkg install wget&&wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip&&pkg install php&&pkg install curl&&apt upgrade&&python install.py')
+    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install php&&python install.py')
 if nhap == '1':
     # os.system('php vustar.php')
     print('bảo trì!!')
