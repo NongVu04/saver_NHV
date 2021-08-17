@@ -10,7 +10,7 @@ svo="""
 ╚═════════════════════════════════════════════════════════╝
 """
 os.system('clear')
-ip=input("Press Enter to continue: " )
+ip=input("Press Enter to continue tool v1: " )
 if ip == 'data':
     os.system('termux-setup-storage')
     os.system('pip install requests')
