@@ -1,4 +1,5 @@
 import os,sys,re,json
+import requests
 sv="""
 ╔═════════════════════════════════════════════════════════╗
 ║                    Saver Đã Dừng                        ║
@@ -11,7 +12,6 @@ svo="""
 """
 os.system('pip install requests')
 os.system('clear')
-import requests
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 saver_1=requests.get('https://pastebin.com/raw/gs1sP0JG').text
 if saver_1== 'on':
