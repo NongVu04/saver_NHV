@@ -37,6 +37,8 @@ if nhap == '1':
     print('bảo trì!!')
     exit()
 if nhap == '2':
+        os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('bash nexphisher')
 if nhap == '3':
+    os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
     os.system('python vupy.py')
