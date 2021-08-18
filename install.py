@@ -1,4 +1,5 @@
 import os,sys,re,json
+os.system('pip install requests')
 import requests
 sv="""
 ╔═════════════════════════════════════════════════════════╗
@@ -10,7 +11,6 @@ svo="""
 ║              Saver Đã Được Kích Hoạt                    ║
 ╚═════════════════════════════════════════════════════════╝
 """
-os.system('pip install requests')
 os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
