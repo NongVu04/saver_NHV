@@ -1,4 +1,5 @@
 import os,sys,re,json
+from time import sleep
 os.system('pip install requests')
 import requests
 sv="""\033[1;31m
@@ -14,13 +15,14 @@ svo="""\033[1;34m
 os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
-saver_1=requests.get('https://pastebin.com/raw/SfxLEPyu').text
+saver_1=requests.get('https://pastebin.com/raw/RnzpLF6Z').text
 if saver_1== 'on':
     print(svo)
 else:
     print(sv)
+    sleep(3)
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
-print('\033[1;30mPhiên Bản \033[1;31mV1.2')
+print('\033[1;30mPhiên Bản \033[1;31mV1.3')
 print('\033[1;30mNhập sos để nhận sự hỗi trợ')
 print('Nhập [0] Để update tool và sửa lỗi')
 print('Nhập [1] Truy cập tool tds php (Bảo trì)')
