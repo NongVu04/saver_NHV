@@ -1,14 +1,14 @@
 import os,sys,re,json
 os.system('pip install requests')
 import requests
-sv="""
+sv="""\033[1;31m
 ╔══════════════════════════════════════════════════════╗
-║                    Saver Đã Dừng                     ║
+║                    Update Saver                      ║
 ╚══════════════════════════════════════════════════════╝
 """
-svo="""
+svo="""\033[1;34m
 ╔══════════════════════════════════════════════════════╗
-║              Saver Đã Được Kích Hoạt                 ║
+║              \033[1;30mSaver Đã Được Kích Hoạt\033[1;34m                 ║
 ╚══════════════════════════════════════════════════════╝
 """
 os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
@@ -19,11 +19,9 @@ if saver_1== 'on':
     print(svo)
 else:
     print(sv)
-    exit()
-print('''\033[1;32m''')
-print('Phiên Bản V1.2')
-print("Ghi Chú: "+print_tex)
-print('Nhập sos để nhận sự hỗi trợ')
+    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
+print('\033[1;30mPhiên Bản \033[1;31mV1.2')
+print('\033[1;30mNhập sos để nhận sự hỗi trợ')
 print('Nhập [0] Để update tool và sửa lỗi')
 print('Nhập [1] Truy cập tool tds php (Bảo trì)')
 print('Nhập [2] Truy cập công cụ hacker')
