@@ -41,11 +41,6 @@ if nhap == '2':
         os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('bash nexphisher')
 if nhap == '3':
-<<<<<<< HEAD
     os.system('python vupy.py')
 if nhap == '4':
     os.system('termux-open-url https://id.traodoisub.com/')
-=======
-    os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
-    os.system('python vupy.py')
->>>>>>> 7a8fcc458b7b449ef8e06ccc6a1d398b613be569
