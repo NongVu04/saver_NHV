@@ -1,4 +1,5 @@
 import os,sys,re,json
+os.system('pip install requests')
 import requests
 sv="""
 ╔═════════════════════════════════════════════════════════╗
@@ -10,7 +11,6 @@ svo="""
 ║              Saver Đã Được Kích Hoạt                    ║
 ╚═════════════════════════════════════════════════════════╝
 """
-os.system('pip install requests')
 os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
@@ -27,6 +27,7 @@ print('Nhập [0] Để update tool và sửa lỗi')
 print('Nhập [1] Truy cập tool tds php (Bảo trì)')
 print('Nhập [2] Truy cập công cụ hacker')
 print('Nhập [3] Truy cập tool tds python')
+print('Nhập [4] Mở trang lấy id Facebook.')
 nhap=input('Nhập: ')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
@@ -37,6 +38,14 @@ if nhap == '1':
     print('bảo trì!!')
     exit()
 if nhap == '2':
+        os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('bash nexphisher')
 if nhap == '3':
+<<<<<<< HEAD
     os.system('python vupy.py')
+if nhap == '4':
+    os.system('termux-open-url https://id.traodoisub.com/')
+=======
+    os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
+    os.system('python vupy.py')
+>>>>>>> 7a8fcc458b7b449ef8e06ccc6a1d398b613be569
