@@ -15,8 +15,8 @@ svo="""\033[1;34m
 os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
-saver_1=requests.get('https://pastebin.com/raw/RnzpLF6Z').text
-if saver_1== 'on':
+saver_2=requests.get('https://pastebin.com/raw/RnzpLF6Z').text
+if saver_2== 'on':
     print(svo)
 else:
     print(sv)
