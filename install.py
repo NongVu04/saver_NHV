@@ -20,52 +20,17 @@ if saver_1== 'on':
 else:
     print(sv)
     exit()
-print('''
-........................................................................
-:      ,~~.          ,~~.          ,~~.          ,~~.          ,~~.    :
-:     (  6 )-_,     (  6 )-_,     (  6 )-_,     (  6 )-_,     (  6 )-_,:
-:(\___ )=='-'  (\___ )=='-'  (\___ )=='-'  (\___ )=='-'  (\___ )=='-'  :
-: \ .   ) )     \ .   ) )     \ .   ) )     \ .   ) )     \ .   ) )    :
-:  \ `-' /       \ `-' /       \ `-' /       \ `-' /       \ `-' /     :
-: ~'`~'`~'`~`~'`~'`~'`~'`~`~'`~'`~'`~'`~`~'`~'`~'`~'`~'`~`~'`~'`~'`~'` :
-:      ,~~.    ..........................................      ,~~.    :
-:     (  9 )-_,:● Nhập sos để nhận sự hỗi trợ           :     (  9 )-_,:
-:(\___ )=='-'  :● Nhập [0] Để update tool và sửa lỗi    :(\___ )=='-'  :
-: \ .   ) )    :● Nhập [1] Truy cập tool php(Bảo trì)   : \ .   ) )    :
-:  \ `-' /     :● Nhập [2] Truy cập công cụ hacker      :  \ `-' /     :
-:   `~j-'      :● Nhập [3] Truy cập tool tds python     :   `~j-'      :
-:     '=:      :● Nhập [4] Mở trang lấy id Facebook.    :     '=:      :
-:      ,~~.    :● Nhập [5] Tool admin                   :      ,~~.    :
-:     (  9 )-_,:● Nhập [6] Truy cập web traodoisub.     :     (  9 )-_,:
-:(\___ )=='-'  :                                        :(\___ )=='-'  :
-: \ .   ) )    :                                        : \ .   ) )    :
-:  \ `-' /     :                                        :  \ `-' /     :
-:   `~j-'      :                                        :   `~j-'      :
-:     '=:      :                                        :     '=:      :
-:      ,~~.    :                                        :      ,~~.    :
-:     (  9 )-_,:                                        :     (  9 )-_,:
-:(\___ )=='-'  :                                        :(\___ )=='-'  :
-: \ .   ) )    :                                        : \ .   ) )    :
-:  \ `-' /     :                                        :  \ `-' /     :
-:   `~j-'      :                                        :   `~j-'      :
-:     '=:      :........................................:     '=:      :
-:      ,~~.          ,~~.          ,~~.          ,~~.          ,~~.    :
-:     (  6 )-_,     (  6 )-_,     (  6 )-_,     (  6 )-_,     (  6 )-_,:
-:(\___ )=='-'  (\___ )=='-'  (\___ )=='-'  (\___ )=='-'  (\___ )=='-'  :
-: \ .   ) )     \ .   ) )     \ .   ) )     \ .   ) )     \ .   ) )    :
-:  \ `-' /       \ `-' /       \ `-' /       \ `-' /       \ `-' /     :
-: ~'`~'`~'`~`~'`~'`~'`~'`~`~'`~'`~'`~'`~`~'`~'`~'`~'`~`~'`~'`~'`~'`~'` :
-:......................................................................:''')
-# print('Phiên Bản V1.2')
-# print("Ghi Chú: "+print_tex)
-# print('Nhập sos để nhận sự hỗi trợ')
-# print('Nhập [0] Để update tool và sửa lỗi')
-# print('Nhập [1] Truy cập tool tds php (Bảo trì)')
-# print('Nhập [2] Truy cập công cụ hacker')
-# print('Nhập [3] Truy cập tool tds python')
-# print('Nhập [4] Mở trang lấy id Facebook.')
-# print('Nhập [5] Tool admin')
-# print('Nhập [6] Truy cập web traodoisub.')
+print('''\033[1;32m''')
+print('Phiên Bản V1.2')
+print("Ghi Chú: "+print_tex)
+print('Nhập sos để nhận sự hỗi trợ')
+print('Nhập [0] Để update tool và sửa lỗi')
+print('Nhập [1] Truy cập tool tds php (Bảo trì)')
+print('Nhập [2] Truy cập công cụ hacker')
+print('Nhập [3] Truy cập tool tds python')
+print('Nhập [4] Mở trang lấy id Facebook.')
+print('Nhập [5] Tool admin')
+print('Nhập [6] Truy cập web traodoisub.')
 nhap=input('Nhập: ')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
