@@ -20,7 +20,7 @@ if saver_1== 'on':
 else:
     print(sv)
     exit()
-print('Phiên Bản V1.1')
+print('Phiên Bản V1.2')
 print("Ghi Chú: "+print_tex)
 print('Nhập sos để nhận sự hỗi trợ')
 print('Nhập [0] Để update tool và sửa lỗi')
