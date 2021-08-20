@@ -66,7 +66,7 @@ if nhap == '5':
         os.system('pkg install wget')
         os.system('pkg install curl')
         os.system('pkg install openssl')
-        os.system('pkg install python')
+        # os.system('pkg install python')
         os.system('pip2 install requests')
         os.system('pip2 install mechanize')
         os.system('pip2 install bs4')
