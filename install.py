@@ -32,7 +32,7 @@ print('Nhập [4] Mở trang lấy id Facebook.')
 print('Nhập [5] Tool admin')
 print('Nhập [6] Truy cập web traodoisub.')
 os.system('play-audio nhac_nen.mp3')
-# os.system('')
+os.system('exit')
 nhap=input('Nhập: ')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
