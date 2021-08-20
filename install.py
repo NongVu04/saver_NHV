@@ -31,8 +31,8 @@ print('Nhập [3] Truy cập tool tds python')
 print('Nhập [4] Mở trang lấy id Facebook.')
 print('Nhập [5] Tool admin')
 print('Nhập [6] Truy cập web traodoisub.')
-# os.system('play-audio nhac_nen.mp3')
-nhap=input('Nhập: '+ os.system('play-audio nhac_nen.mp3'))
+nhap=input('Nhập: ')
+os.system('play-audio nhac_nen.mp3')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
 if nhap=='0':
