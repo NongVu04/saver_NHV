@@ -38,7 +38,7 @@ nhap=input('Nhập: ')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
 if nhap=='0':
-    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
+    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 if nhap == '1':
     # os.system('php vustar.php')
     print('bảo trì!!')
