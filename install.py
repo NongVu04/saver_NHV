@@ -1,5 +1,6 @@
 import os,sys,re,json
 from time import sleep
+from random import randint
 print('\033[1;32m')
 os.system('play nhac_nen.mp3')
 os.system('pip install requests')
@@ -33,10 +34,11 @@ print('Nhập [3] Truy cập tool tds python')
 print('Nhập [4] Mở trang lấy id Facebook.')
 print('Nhập [5] Tool admin')
 print('Nhập [6] Truy cập web traodoisub.')
-print('Nhập [7] Nghe nhạc + ảo tưởng mình là hacker.')
+print('Nhập [7] Nghe nhạc + Ảo tưởng mình là hacker.')
 nhap=input('Nhập: ')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
+    os.system('play xoa.mp3')
 if nhap=='0':
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 if nhap == '1':
@@ -60,7 +62,6 @@ if nhap == '5':
         os.system('pkg install curl')
         os.system('pkg install openssl')
         os.system('pkg install python')
-        os.system('pkg install python')
         os.system('pip2 install requests')
         os.system('pip2 install mechanize')
         os.system('pip2 install bs4')
@@ -72,12 +73,24 @@ if nhap=='6':
     os.system('termux-open-url http://traodoisub.com/')
 if nhap=='7':
     while True:
+        a=randint(0,5)
+        if a==0:
+            a='Save attack'
+        if a==1:
+            a='HOST: '
+        if a==2:
+            a='wifi hacking: '
+        if a==3:
+            a='Run hack'
+        if a==4:
+            a='Hack Facebook'
+        if a==5:
+            a='Tấn công trang chủ facebook'
         print('\033[1;32m')
+        # print(a)
+        h=input('=> '+ str(a)+': ')
         os.system('play nhac_nen.mp3')
-        h=input('wifi hacker: ')
-        os.system('play nhac_nen.mp3')
-        h=input('IP hacker: ')
-        os.system('play nhac_nen.mp3')
-        h=input('Host hacker: ')
-        os.system('play nhac_nen.mp3')
+        if h=='exit':
+            print('Đã hack thành công!!!\nFacebook đã sập')
+            break
 
