@@ -1,6 +1,7 @@
 import os,sys,re,json
 from time import sleep
 os.system('pip install requests')
+print('\033[1;32m')
 os.system('play nhac_nen.mp3')
 import requests
 sv="""\033[1;31m
