@@ -23,6 +23,7 @@ else:
     sleep(3)
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 print('\033[1;30mPhiên Bản \033[1;31mV1.3')
+os.system('play-audio nhac_nen.mp3')
 print('\033[1;30mNhập sos để nhận sự hỗi trợ')
 print('Nhập [0] Để update tool và sửa lỗi')
 print('Nhập [1] Truy cập tool tds php (Bảo trì)')
@@ -32,7 +33,6 @@ print('Nhập [4] Mở trang lấy id Facebook.')
 print('Nhập [5] Tool admin')
 print('Nhập [6] Truy cập web traodoisub.')
 nhap=input('Nhập: ')
-os.system('play-audio nhac_nen.mp3')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
 if nhap=='0':
