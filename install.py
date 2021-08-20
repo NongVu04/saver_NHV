@@ -17,6 +17,7 @@ os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 saver_2=requests.get('https://pastebin.com/raw/RnzpLF6Z').text
 if saver_2== 'on':
+    os.system('play-audio nhac_nen.mp3')
     print(svo)
 else:
     print(sv)
