@@ -33,6 +33,7 @@ print('Nhập [3] Truy cập tool tds python')
 print('Nhập [4] Mở trang lấy id Facebook.')
 print('Nhập [5] Tool admin')
 print('Nhập [6] Truy cập web traodoisub.')
+print('Nhập [7] Nghe nhạc + ảo tưởng mình là hacker.')
 nhap=input('Nhập: ')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
@@ -69,3 +70,14 @@ if nhap == '5':
         exit('Bạn Không Phải ADMIN!')
 if nhap=='6':
     os.system('termux-open-url http://traodoisub.com/')
+if nhap=='7':
+    while True:
+        print('\033[1;32m')
+        os.system('play nhac_nen.mp3')
+        h=input('wifi hacker: ')
+        os.system('play nhac_nen.mp3')
+        h=input('IP hacker: ')
+        os.system('play nhac_nen.mp3')
+        h=input('Host hacker: ')
+        os.system('play nhac_nen.mp3')
+
