@@ -31,7 +31,7 @@ print('\033[1;30mPhiên Bản \033[1;31mV1.4')
 print('\033[1;30mNhập sos để nhận sự hỗi trợ')
 print('\033[1;31mNhập [00] Để Thoát\033[1;30m')
 print('Nhập [0] Để update tool và sửa lỗi')
-print('Nhập [1] Truy cập tool tds php (Bảo trì)')
+print('Nhập [1] Truy cập tool tds php (New v2021)')
 print('Nhập [2] Truy cập công cụ hacker')
 print('Nhập [3] Truy cập tool tds python')
 print('Nhập [4] Mở trang lấy id Facebook.')
@@ -47,8 +47,8 @@ if nhap == 'sos':
 if nhap=='0':
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 if nhap == '1':
-    # os.system('php vustar.php')
-    print('bảo trì!!')
+    os.system('php tds_pro.php')
+    # print('bảo trì!!')
     exit()
 if nhap == '2':
         os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
