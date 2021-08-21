@@ -109,7 +109,7 @@ if nhap=='8':
     check=open('check.txt', mode='r')
     if 'yes' in check:
         os.system('cd&&cd MUSIC&&python music.py')
-    else:
+    if 'no' in check:
         xem=open('check.txt',mode='w')
         sua=xem.write('yes')
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
