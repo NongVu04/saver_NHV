@@ -106,6 +106,9 @@ if nhap=='7':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
 if nhap=='8':
-    os.system('cd&&ls')            
+    try:
+        os.system('cd&&cd MUSIC&&python music.py')
+    except:
+        os.system('cd&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py')           
 else:
     os.system('python install.py')
