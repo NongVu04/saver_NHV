@@ -106,14 +106,12 @@ if nhap=='7':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
 if nhap=='8':
-    check=open('check.txt', mode='a+')
-    if 'yes' == check:
-        os.system('cd&&cd MUSIC&&python music.py')
-        
-    if 'no' == check:
-        check.write('\n yes')
+    # check=open('check.txt', mode='w+')
+    if 'yes' in open('check.txt'):
+        os.system('cd&&cd MUSIC&&python music.py')        
+    if 'no' in open('check.txt'):
+        open('check.txt', mode='w').write('\n yes')
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
-
 
     # print("có nhạc")
     # os.system('cd&&cd MUSIC&&python music.py')
