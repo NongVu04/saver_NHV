@@ -24,7 +24,7 @@ if saver_new== 'on':
 else:
     print(sv)
     sleep(3)
-    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
+    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage -y&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
 print('\033[1;30mNhập [sos] để nhận sự hỗi trợ')
