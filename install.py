@@ -2,7 +2,12 @@ import os,sys,re,json
 from time import sleep
 from random import randint
 print('\033[1;32m')
-os.system('pip install requests')
+check_saver=open('check_saver.txt',mode='r')
+if 'continue' in check_saver.read():
+    pass
+else:
+    open('check_saver.txt',mode='w').write('continue')
+    os.system('pip install requests')
 os.system('play ting.mp3')
 import requests
 sv="""\033[1;31m
@@ -106,12 +111,12 @@ if nhap=='7':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
 if nhap=='8':
-    check=open('check.txt', mode='r')
+    check=open('check_music.txt', mode='r')
     if 'yes' in check.read():
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
     else:
-        open('check.txt', mode='w').write('\n yes')
+        open('check_music.txt', mode='w').write('\n yes')
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
 else:
