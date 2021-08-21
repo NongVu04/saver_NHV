@@ -3,7 +3,6 @@ from time import sleep
 from random import randint
 print('\033[1;32m')
 os.system('play ting.mp3')
-os.system('play ting.mp3')
 os.system('pip install requests')
 import requests
 sv="""\033[1;31m
