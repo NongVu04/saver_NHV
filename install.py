@@ -2,7 +2,8 @@ import os,sys,re,json
 from time import sleep
 from random import randint
 print('\033[1;32m')
-os.system('play ting ting.mp3')
+os.system('play ting.mp3')
+os.system('play ting.mp3')
 os.system('pip install requests')
 import requests
 sv="""\033[1;31m
@@ -39,7 +40,7 @@ print('Nhập [6] Truy cập web traodoisub.')
 print('Nhập [7] Nghe nhạc + Ảo tưởng mình là hacker.')
 nhap=input('Nhập: ')
 if nhap =='00':
-    os.system('exit&&exit -y')
+    exit('Đã thoát!!!\n')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
     os.system('play xoa.mp3')
