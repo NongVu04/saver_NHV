@@ -112,7 +112,7 @@ if nhap=='8':
     else:
         xem=open('check.txt',mode='w')
         sua=xem.write('yes')
-        os.system('cd&&rm -rf&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
+        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
 
     # print("có nhạc")
     # os.system('cd&&cd MUSIC&&python music.py')
