@@ -6,8 +6,8 @@ check_saver=open('check_saver.txt',mode='r')
 if 'continue' in check_saver.read():
     pass
 else:
-    open('check_saver.txt',mode='w').write('continue')
     os.system('pip install requests')
+    open('check_saver.txt',mode='w').write('continue')
 os.system('play ting.mp3')
 import requests
 sv="""\033[1;31m
@@ -116,8 +116,8 @@ if nhap=='8':
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
     else:
-        open('check_music.txt', mode='w').write('\n yes')
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
+        open('check_music.txt', mode='w').write('\n yes')
         os.system('python install.py')     
 else:
     os.system('python install.py')
