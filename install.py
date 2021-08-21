@@ -20,8 +20,8 @@ svo="""\033[1;34m
 os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
-saver_1=requests.get('https://pastebin.com/raw/SfxLEPyu').text
-if saver_1== 'on':
+saver_new=requests.get('https://pastebin.com/raw/x1pduxHa').text
+if saver_new== 'on':
     print(svo)
 else:
     print(sv)

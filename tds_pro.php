@@ -30,7 +30,7 @@ $tokenacc = $cc->{"tokenacc"};
 }
 } else {
 $my = fopen("log.txt","w+");
-print $res."🌺".$red."[".$green."✓".$red."]".$res." => ".$green."Nhập Access Token TDS: ";
+print "🌺".$red."[".$green."✓".$red."] => ".$green."Nhập Access Token TDS: ";
 $tokenacc =trim(fgets(STDIN));
 $arr = array("tokenacc"=> $tokenacc);
 fwrite($my,json_encode($arr));
