@@ -107,8 +107,10 @@ if nhap=='7':
             os.system('python install.py')
 if nhap=='8':
     try:
-        os.system('cd MUSIC&&python music.py')
+        print("có nhạc")
+        os.system('cd&&cd MUSIC&&python music.py')
     except:
-        os.system('git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py')           
+        print("không có nhạc")
+        os.system('cd&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py')           
 else:
     os.system('python install.py')
