@@ -37,6 +37,7 @@ print('Nhập [4] Mở trang lấy id Facebook.')
 print('Nhập [5] Tool admin')
 print('Nhập [6] Truy cập web traodoisub.')
 print('Nhập [7] Nghe nhạc + Ảo tưởng mình là hacker.')
+print('Nhập [8] Máy nghe nhạc.')
 nhap=input('Nhập: ')
 if nhap =='00':
     exit()
@@ -104,5 +105,7 @@ if nhap=='7':
         if h=='hack':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
+if nhap=='8':
+    os.system('cd&&ls')            
 else:
     os.system('python install.py')
