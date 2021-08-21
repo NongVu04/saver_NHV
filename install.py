@@ -6,7 +6,7 @@ check_saver=open('check_saver.txt',mode='r')
 if 'continue' in check_saver.read():
     pass
 else:
-    os.system('pip install requests')
+    os.system('pip install requests&&pkg install sox -y')
     open('check_saver.txt',mode='w').write('continue')
 os.system('play ting.mp3')
 import requests
