@@ -106,7 +106,7 @@ if nhap=='7':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
 if nhap=='8':
-    check=open('check.txt')
+    check=open('check.txt', mode='r')
     if 'yes' in check:
         os.system('cd&&cd MUSIC&&python music.py')
     else:
