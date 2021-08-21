@@ -108,9 +108,11 @@ if nhap=='7':
 if nhap=='8':
     check=open('check.txt', mode='r')
     if 'yes' in check.read():
-        os.system('cd&&cd MUSIC&&python music.py')      
+        os.system('cd&&cd MUSIC&&python music.py') 
+        os.system('python install.py')     
     else:
         open('check.txt', mode='w').write('\n yes')
-        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py')      
+        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
+        os.system('python install.py')     
 else:
     os.system('python install.py')
