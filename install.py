@@ -8,7 +8,7 @@ if 'continue' in check_saver.read():
 else:
     os.system('pip install requests&&pkg install sox -y')
     open('check_saver.txt',mode='w').write('continue')
-os.system('play ting.mp3')
+# os.system('play ting.mp3')
 import requests
 sv="""\033[1;31m
 ╔══════════════════════════════════════════════════════╗
@@ -21,6 +21,7 @@ svo="""\033[1;34m
 ╚══════════════════════════════════════════════════════╝
 """
 os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
+os.system('play ting.mp3')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 saver_new=requests.get('https://pastebin.com/raw/En7j0KFK').text
