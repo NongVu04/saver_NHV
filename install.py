@@ -21,7 +21,6 @@ svo="""\033[1;34m
 ╚══════════════════════════════════════════════════════╝
 """
 os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
-os.system('play ting.mp3')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 saver_new=requests.get('https://pastebin.com/raw/En7j0KFK').text
@@ -30,6 +29,7 @@ if saver_new== 'on':
 else:
     print(sv)
     sleep(3)
+    os.system('play ting.mp3')
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage -y&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
