@@ -2,7 +2,7 @@ import os,sys,re,json
 from time import sleep
 from random import randint
 print('\033[1;32m')
-check_saver=open('check_saver.txt',mode='a+')
+check_saver=open('check_saver.txt',mode='r')
 if 'continue' in check_saver.read():
     pass
 else:
@@ -68,7 +68,7 @@ if nhap == '2':
         # print('thành công')
         pass
     else:
-        os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup')
+        os.system('bash setup&&bash tmux_setup')
         open('check_setup.txt',mode='a+').write('\n setup_ok')
         os.system('bash nexphisher')
         os.system('python install.py')
