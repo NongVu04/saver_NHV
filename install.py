@@ -10,6 +10,7 @@ else:
     os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
 
     open('check_saver.txt',mode='w').write('continue')
+    pass
 # os.system('play ting.mp3')
 import requests
 sv="""\033[1;31m
