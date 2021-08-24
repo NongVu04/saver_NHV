@@ -7,7 +7,7 @@ if 'continue' in check_saver.read():
     pass
 else:
     os.system('pip install requests&&pkg install sox -y')
-    os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup')
+    os.system('termux-setup-storage -y&&pkg install php')
 
     open('check_saver.txt',mode='w').write('continue')
     pass
@@ -61,9 +61,15 @@ if nhap == '1':
     # print('bảo trì!!')
     os.system('python install.py')
 if nhap == '2':
+    if 'setup_ok' in check_saver.read():
         os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('bash nexphisher')
+        pass
+    else:
+        os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup')
+        open('check_saver.txt',mode='w').write('\nsetup_ok')
         os.system('python install.py')
+# os.syst
 if nhap == '3':
     os.system('python vupy.py')
     os.system('python install.py')
@@ -121,7 +127,7 @@ if nhap=='8':
         os.system('python install.py')     
     else:
         # with open('check_music.txt', mode='r')
-        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git') 
+        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git3') 
         os.system('cd saver_NHV')
         open('check_music.txt', mode='w').write('yes')
         os.system('cd&&cd MUSIC&&python music.py') 
