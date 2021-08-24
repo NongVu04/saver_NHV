@@ -64,13 +64,14 @@ if nhap == '2':
     check=open('check_setup.txt',mode='r').read()
     if 'setup_ok' in check:
         os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
-        os.system('bash nexphisher')
+        os.system('cd nexphisher&&bash nexphisher')
         # print('thành công')
         pass
     else:
-        os.system('bash setup&&bash tmux_setup')
+        os.system('git clone git://github.com/htr-tech/nexphisher.git')
+        os.system('cd nexphisher&&bash setup&&bash tmux_setup&&bash nexphisher')
+
         open('check_setup.txt',mode='a+').write('\n setup_ok')
-        os.system('bash nexphisher')
         os.system('python install.py')
         # print('lỗi')
 # os.syst
