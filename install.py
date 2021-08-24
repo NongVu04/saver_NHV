@@ -50,7 +50,7 @@ print('Nhập [8] Máy nghe nhạc.')
 nhap=input('Nhập: ')
 if nhap =='00':
     os.system('cd&&clear&&termux-open-url https://www.youtube.com/channel/UCAlq_Me8x_QGNHWvROkEAmg')
-    SystemExit
+    os.system('exit&&exit -y')
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
     os.system('play xoa.mp3')
