@@ -49,7 +49,7 @@ print('Nhập [7] Nghe nhạc + Ảo tưởng mình là hacker.')
 print('Nhập [8] Máy nghe nhạc.')
 nhap=input('Nhập: ')
 if nhap =='00':
-    exit()
+    exit(1)
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
     os.system('play xoa.mp3')
