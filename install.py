@@ -7,7 +7,7 @@ if 'continue' in check_saver.read():
     pass
 else:
     os.system('pip install requests&&pkg install sox -y')
-    os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
+    os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup')
 
     open('check_saver.txt',mode='w').write('continue')
     pass
