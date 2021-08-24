@@ -7,6 +7,8 @@ if 'continue' in check_saver.read():
     pass
 else:
     os.system('pip install requests&&pkg install sox -y')
+    os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
+
     open('check_saver.txt',mode='w').write('continue')
 # os.system('play ting.mp3')
 import requests
@@ -30,7 +32,7 @@ else:
     print(sv)
     sleep(3)
     os.system('play ting.mp3')
-    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage -y&&pkg install sox -y&&pkg install php&&bash tmux_setup&&bash setup&&python install.py')
+    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
 
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
 print('\033[1;30mNhập [sos] để nhận sự hỗi trợ')
@@ -52,7 +54,7 @@ if nhap == 'sos':
     os.system('play xoa.mp3')
     os.system('python install.py')
 if nhap=='0':
-    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&termux-setup-storage -y&&pkg install sox -y&&pkg install php -y&&bash tmux_setup&&bash setup&&python install.py')
+    os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
 if nhap == '1':
     os.system('php tds_pro.php')
     # print('bảo trì!!')
@@ -117,8 +119,9 @@ if nhap=='8':
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
     else:
+        # with open('check_music.txt', mode='r')
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
-        open('check_music.txt', mode='w').write('\n yes')
+        open('check_music.txt', mode='w').write('yes')
         os.system('python install.py')     
 else:
     os.system('python install.py')
