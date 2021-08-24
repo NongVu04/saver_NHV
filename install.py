@@ -121,8 +121,8 @@ if nhap=='8':
         os.system('python install.py')     
     else:
         # with open('check_music.txt', mode='r')
-        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
         open('check_music.txt', mode='w').write('yes')
+        os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
 else:
     os.system('python install.py')
