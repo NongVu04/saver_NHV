@@ -51,6 +51,7 @@ nhap=input('Nhập: ')
 if nhap =='00':
     os.system('cd&&clear&&termux-open-url https://www.youtube.com/channel/UCAlq_Me8x_QGNHWvROkEAmg')
     os.system('exit&&exit -y')
+    exit()
 if nhap == 'sos':
     os.system('termux-open-url https://nongvu04.github.io/')
     os.system('play xoa.mp3')
