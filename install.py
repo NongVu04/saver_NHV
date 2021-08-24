@@ -2,7 +2,7 @@ import os,sys,re,json
 from time import sleep
 from random import randint
 print('\033[1;32m')
-check_saver=open('check_saver.txt',mode='r')
+check_saver=open('check_saver.txt',mode='a+')
 if 'continue' in check_saver.read():
     pass
 else:
@@ -61,14 +61,18 @@ if nhap == '1':
     # print('bảo trì!!')
     os.system('python install.py')
 if nhap == '2':
-    if 'setup_ok' in check_saver.read():
+    check=open('check_setup.txt',mode='r').read()
+    if 'setup_ok' in check:
         os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('bash nexphisher')
+        # print('thành công')
         pass
     else:
         os.system('termux-setup-storage -y&&pkg install php&&bash tmux_setup&&bash setup')
-        open('check_saver.txt',mode='w').write('\nsetup_ok')
+        open('check_setup.txt',mode='a+').write('\n setup_ok')
+        os.system('bash nexphisher')
         os.system('python install.py')
+        # print('lỗi')
 # os.syst
 if nhap == '3':
     os.system('python vupy.py')
