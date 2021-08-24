@@ -49,7 +49,7 @@ print('Nhập [7] Nghe nhạc + Ảo tưởng mình là hacker.')
 print('Nhập [8] Máy nghe nhạc.')
 nhap=input('Nhập: ')
 if nhap =='00':
-    os.system('cd&&clear&&termux-open-url https://www.youtube.com/channel/UCAlq_Me8x_QGNHWvROkEAmg')
+    os.system('termux-open-url https://www.youtube.com/channel/UCAlq_Me8x_QGNHWvROkEAmg')
     os.system('exit&&exit -y')
     exit()
 if nhap == 'sos':
