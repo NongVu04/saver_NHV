@@ -39,22 +39,22 @@ fi
 
 reqs() {
 
-command -v php > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Lỗi! Tắt tools \e[0m\e[93mKhởi động lại và update tool\e[0m\n\n"; exit 1; }
-command -v curl > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Lỗi! Tắt tools \e[0m\e[93mKhởi động lại và update tool\e[0m\n\n"; exit 1; }
-command -v ssh > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Lỗi! Tắt tools \e[0m\e[93mKhởi động lại và update tool\e[0m\n\n"; exit 1; }
-command -v unzip > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Lỗi! Tắt tools \e[0m\e[93mKhởi động lại và update tool\e[0m\n\n"; exit 1; }
+command -v php > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
+command -v curl > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
+command -v ssh > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
+command -v unzip > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
 
 if [[ -d .htr ]]; then
 printf ""
 else
-printf "\n\e[0m\e[96m Lỗi! Tắt tools\e[0m\e[93mKhởi động lại và update tool\e[0m\n\n"
+printf "\n\e[0m\e[96m Packages are not Found ! type \e[0m\e[93mbash setup\e[0m\n\n"
 exit 1 
 fi
 
 if [[ -d .Modules ]]; then
 printf ""
 else
-printf "\n\e[0m\e[96m Lỗi! Tắt tools\e[0m\e[93mKhởi động lại và update tool\e[0m\n\n"
+printf "\n\e[0m\e[96m Packages are not Found ! type \e[0m\e[93mbash setup\e[0m\n\n"
 exit 1 
 fi
 
@@ -78,7 +78,7 @@ printf "\e[0m\e[92m | .   |/ _ \ \/ / \e[0m\e[93m|  ___/|  _ \| / __|  _ \ / _ \
 printf "\e[0m\e[92m | |\  |  __/>  <  \e[0m\e[93m| |    | | | | \__ \ | | |  __/ |    \e[0m\n"
 printf "\e[0m\e[92m |_| \_|\___/_/\_\ \e[0m\e[93m|_|    |_| |_|_|___/_| |_|\___|_| \e[0m\e[1;44m[V 1.0]\e[0m\n"
 printf "\e[0m\n"
-printf " \e[0m\e[1;41m Phần mềm hacker  [BY : Nông Hoàng Vũ]\e[0m\n"
+printf " \e[0m\e[1;41m Advanced Phishing Tool with 30+ Templates  [BY : HTR-TECH ]\e[0m\n"
 printf "\e[0m\n"
 
 }
@@ -91,9 +91,9 @@ printf "\e[0m\e[93m _  _ ___ _   _    ___  _  _ ___ ___ _  _ ___  ___ \e[0m\n"
 printf "\e[0m\e[93m |\ | |__  \_/    |___] |__|  |  |__ |__| |__ |__/ \e[0m\n"
 printf "\e[0m\e[93m | \| |__ _/ \_   |    _|  | _|_ ___||  |_|__ | \_ \e[0m\e[1;46m[V 1.0]\e[0m\n"
 printf "\e[0m\n"
-printf "    \e[0m\e[1;44m Advanced Phishing Tool with 16+ Templates\e[0m\n"
+printf "    \e[0m\e[1;44m Advanced Phishing Tool with 30+ Templates\e[0m\n"
 printf "\e[0m\n"
-printf "\e[0m\e[91m    [\e[0m\e[96m BY \e[0m\e[91m: \e[0m\e[96mBy NHV \e[0m\e[91m] \e[0m\n"
+printf "\e[0m\e[91m    [\e[0m\e[96m BY \e[0m\e[91m: \e[0m\e[96mhttps://github.com/htr-tech \e[0m\e[91m] \e[0m\n"
 printf "\e[0m\n"
 
 }
@@ -336,12 +336,13 @@ printf "\e[0m\e[93m _  _ ___ _   _    ___  _  _ ___ ___ _  _ ___  ___ \e[0m\n"
 printf "\e[0m\e[93m |\ | |__  \_/    |___] |__|  |  |__ |__| |__ |__/ \e[0m\n"
 printf "\e[0m\e[93m | \| |__ _/ \_   |    _|  | _|_ ___||  |_|__ | \_ \e[0m\e[1;46m[V 1.0]\e[0m\n"
 printf "\e[0m\n"
-printf "    \e[0m\e[1;44m Advanced Phishing Tool with 16+ Templates\e[0m\n"
+printf "    \e[0m\e[1;44m Advanced Phishing Tool with 30+ Templates\e[0m\n"
 printf "\e[0m\n"
-printf "\e[0m\e[92m  AUTHOR \e[0m\e[91m     :\e[0m\e[93m NHV \e[0m\e[91m[\e[0m\e[93m Nông Hoàng Vũ \e[0m\e[91m]\e[0m\n"
+printf "\e[0m\e[92m  AUTHOR \e[0m\e[91m     :\e[0m\e[93m TAHMID RAYAT \e[0m\e[91m[\e[0m\e[93m HTR-TECH \e[0m\e[91m]\e[0m\n"
 printf "\e[0m\n"
-printf "\e[0m\e[92m  GITHUB \e[0m\e[91m     : \e[0m\e[96mhttps://github.com/NongVu04\e[0m\n"
+printf "\e[0m\e[92m  GITHUB \e[0m\e[91m     : \e[0m\e[96mhttps://github.com/htr-tech\e[0m\n"
 printf "\e[0m\n"
+printf "\e[0m\e[92m  Instagram \e[0m\e[91m  : \e[0m\e[96mhttps://instagr.am/tahmid.rayat\e[0m\n"
 printf "\e[0m\n"
 printf "\e[0m\e[92m  Version \e[0m\e[91m    : \e[0m\e[93m1.0\e[0m\n"
 printf "\e[0m\n"
@@ -360,7 +361,7 @@ menu
 elif [[ $about_option == 99 ]]; then
 sleep 1
 printf "\e[0m\n"
-printf " \e[0m\e[1;42m Thanks for Using This Tool !!\e[0m  \e[1;44m Visit https://github.com/NongVu04/saver_NHV.git for more\e[0m\n"
+printf " \e[0m\e[1;42m Thanks for Using This Tool !!\e[0m  \e[1;44m Visit https://github.com/htr-tech for more\e[0m\n"
 printf "\e[0m\n"
 exit 1
 
