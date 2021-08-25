@@ -23,10 +23,10 @@ svo="""\033[1;34m
 ║              \033[1;30mSaver Đã Được Kích Hoạt\033[1;34m                 ║
 ╚══════════════════════════════════════════════════════╝
 """
-os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
+# os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
-saver_new=requests.get('https://pastebin.com/raw/En7j0KFK').text
+saver_new=requests.get('https://pastebin.com/raw/T2Fp7R6H').text
 if saver_new== 'on':
     print(svo)
 else:
@@ -37,15 +37,16 @@ else:
 
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
 print('\033[1;30mNhập [sos] để nhận sự hỗi trợ')
+print('Nhập [admin] để ib và được ad hỗi trợ.')
 print('\033[1;31mNhập [00] Để Thoát\033[1;30m')
-print('Nhập [0] Để update tool và sửa lỗi')
+print('Nhập [0] Để update.')
 print('Nhập [1] Truy cập tool tds php (New v2021)')
 print('Nhập [2] Truy cập công cụ Nexphisher_NV')
 print('Nhập [3] Truy cập tool tds python')
 print('Nhập [4] Mở trang lấy id Facebook.')
-print('Nhập [5] Tool admin')
+print('Nhập [5] Tool admin (yêu cầu bảo mật hai lớp)!!!')
 print('Nhập [6] Truy cập web traodoisub.')
-print('Nhập [7] Nghe nhạc + Ảo tưởng mình là hacker.')
+print('Nhập [7] Nghe nhạc + Code dạo.')
 print('Nhập [8] Máy nghe nhạc.')
 nhap=input('Nhập: ')
 if nhap =='00':
@@ -64,7 +65,7 @@ if nhap == '1':
 if nhap == '2':
     check=open('check_setup.txt',mode='r').read()
     if 'setup_ok' in check:
-        os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
+        # os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('cd nexphisher&&bash nexphisher')
         # print('thành công')
         pass
@@ -137,6 +138,9 @@ if nhap=='8':
         os.system('cd saver_NHV')
         open('check_music.txt', mode='w').write('yes')
         os.system('cd&&cd MUSIC&&python music.py') 
-        os.system('python install.py')     
+        os.system('python install.py')    
+if nhap=='admin':
+    os.system('termux-open-url https://www.facebook.com/04annonymous.nv/') 
+    os.system('python install.py')
 else:
     os.system('python install.py')
