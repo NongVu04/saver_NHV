@@ -73,6 +73,7 @@ try:
 		h.write(htk)
 		h.close()
 		tokentds=htk
+		os.system('clear')
 	else:
 		tokentds=hung
 	h1=open('tokenfb.txt',mode='a+')
