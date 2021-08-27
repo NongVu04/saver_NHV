@@ -158,7 +158,7 @@ try:
 			else:
 				print('Thất Bại id: '+idsub,end='\r')
 				# print("[{dem}]●[{t}]●Thất Bại●"+idsub,end='\r')
-		if luajob=='2':
+		elif luajob=='2':
 			getshare=requests.get('https://traodoisub.com/api/?fields=share&access_token='+tokentds)
 			idshare=getshare.json()[0]['id']
 			datashare = "access_token="+tokenfb
