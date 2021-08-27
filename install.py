@@ -27,7 +27,7 @@ svo="""\033[1;34m
 # os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
-saver_new=requests.get('https://pastebin.com/raw/T2Fp7R6H').text
+saver_new=requests.get('https://pastebin.com/raw/Em2J0Xiq').text
 if saver_new== 'on':
     print(svo)
 else:
