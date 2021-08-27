@@ -126,8 +126,8 @@ else:
 
 
 sleep(0.2)
-print('Nhập [1] để làm nhiệm vụ Follow')
-print('Nhập [2] để làm nhiệm vụ Share')
+print('Nhập [1] để làm nhiệm vụ Follow <=> [+600xu]')
+print('Nhập [2] để làm nhiệm vụ Share <=> [+800xu]')
 
 luajob=input("You Chose: ")
 dl=int(input("Nhập Delay : "))
