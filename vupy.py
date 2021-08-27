@@ -51,7 +51,7 @@ if nhap == check_key_NHV:
 	print('True')
 else:
 	print('Key sai!!')
-	exit()
+	os.system('python vupy.py')
 # os.system('cls')
 os.system("clear")
 print(logo_NV)
