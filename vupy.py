@@ -3,9 +3,9 @@ from datetime import datetime
 from time import sleep
 import random
 sv_off="""
-╔═════════════════════════════════════════════════════════╗
-║         Saver Đã Dừng Vui Lòng Cập Nhật Tools           ║
-╚═════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════╗
+║                      Try again                      ║
+╚═════════════════════════════════════════════════════╝
 """
 DN="""
 ╔═══════════════════════════════════════════╗
@@ -15,13 +15,13 @@ DN="""
 ╚═══════════════════════════════════════════╝
 """
 logo_NV="""
-╔═════════════════════════════════════════════════════════╗
-║Tool By Nông Hoàng Vũ                                    ║
-║Học hack liên hệ zalo: 0766-359-238                      ║
-║Tool 1 chức năng                                         ║
-║Ngày Cập Nhật: 27-08-2021                                ║
-║Đang hoạt động saver: 004                                ║
-╚═════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════╗
+║Tool By Nông Hoàng Vũ                                ║
+║Học hack liên hệ zalo: 0766-359-238                  ║
+║Tool 2 chức năng                                     ║
+║Ngày Cập Nhật: 27-08-2021                            ║
+║Đang hoạt động saver: 004                            ║
+╚═════════════════════════════════════════════════════╝
 """
 sv = """\033[1;34m
 ╔══════════════════════════════════════════════════════╗
@@ -125,12 +125,15 @@ else:
 
 
 sleep(0.2)
-luajob=input("Nhập [Enter] Để Bắt Đầu Chạy Follow: ")
+print('Nhập [1] để làm nhiệm vụ Follow')
+print('Nhập [2] để làm nhiệm vụ Share')
+
+luajob=input("You Chose: ")
 dl=int(input("Nhập Delay : "))
 sleep(0.2)
-os.system('cls')
+# os.system('cls')
 
-# os.system('clear')
+os.system('clear')
 dem=0
 #run
 try:
@@ -138,7 +141,7 @@ try:
 		t=datetime.now().strftime("%H:%M:%S")
 		# if luajob=="1":
 		#Run Follow
-		if luajob=='y' or 'Y':	
+		if luajob=='1':	
 			getsub=requests.get('https://traodoisub.com/api/?fields=follow&access_token='+tokentds)
 			idsub=getsub.json()[0]['id']
 			datasub = "access_token="+tokenfb
@@ -154,6 +157,21 @@ try:
 			else:
 				print('Thất Bại id: '+idsub,end='\r')
 				# print("[{dem}]●[{t}]●Thất Bại●"+idsub,end='\r')
+		if luajob=='2':
+			getshare=requests.get('https://traodoisub.com/api/?fields=share&access_token='+tokentds)
+			idshare=getshare.json()[0]['id']
+			datashare = "access_token="+tokenfb
+			urlshare = 'https://graph.facebook.com/me/feed?method=POST&link=https://www.facebook.com/'+str(idshare)+'&privacy={%27value%27:%20%27EVERYONE%27}&access_token='+tokentds
+			sub=requests.post(urlshare, data=datashare)
+			nhan = json.loads(requests.get('https://traodoisub.com/api/coin/?type=SHARE&id='+str(idshare)+'&access_token='+tokentds).text)
+			if "success" in nhan:
+				dem=dem+1
+				print(f'\033[1;37m[{dem}] ● \033[1;32m{t} ● \033[1;36mShare ● \033[1;33m{idshare} ● \033[1;31m+800 ● \033[1;33m'+str(nhan['data']['xu'])+" Xu")
+				for demtg in range(dl, -1, -1):
+					print('\033[1;33mVui Lòng Đợi '+str(demtg)+'   ',end='\r')
+					sleep(1)
+			else:
+				print('Thất Bại id: '+idshare,end='\r')
 		else:
 			exit('exit')
 except:

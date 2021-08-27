@@ -1,5 +1,6 @@
 import os,sys,re,json
 from time import sleep
+from datetime import datetime
 from random import randint
 print('\033[1;32m')
 check_saver=open('check_saver.txt',mode='r')
@@ -34,7 +35,8 @@ else:
     sleep(3)
     os.system('play ting.mp3')
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
-
+time=datetime.now().strftime("%H:%M:%S")
+print(f'Access time {time} According to Nong Hoang Vu')
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
 print('\033[1;30mNhập [sos] để nhận sự hỗi trợ')
 print('Nhập [admin] để ib và được ad hỗi trợ.')
