@@ -7,7 +7,7 @@ check_saver=open('check_saver.txt',mode='r')
 if 'continue' in check_saver.read():
     pass
 else:
-    os.system('pip install requests&&pkg install sox -y')
+    os.system('pip install requests&&pkg install sox -y&&pip install speedtest-cli')
     os.system('termux-setup-storage -y&&pkg install php')
 
     open('check_saver.txt',mode='w').write('continue')
@@ -51,6 +51,7 @@ print('Nhập [5] Tool admin (yêu cầu bảo mật hai lớp)!!!')
 print('Nhập [6] Truy cập web traodoisub.')
 print('Nhập [7] Nghe nhạc + Code dạo.')
 print('Nhập [8] Máy nghe nhạc.')
+print('Nhập [9] Để kiểm tra mạng.')
 nhap=input('Nhập: ')
 if nhap =='00':
     os.system('termux-open-url https://www.youtube.com/channel/UCAlq_Me8x_QGNHWvROkEAmg')
@@ -144,6 +145,10 @@ if nhap=='8':
         os.system('python install.py')    
 if nhap=='admin':
     os.system('termux-open-url https://www.facebook.com/04annonymous.nv/') 
+    os.system('python install.py')
+if nhap=='9':
+    os.system('speedtest-cli')
+    input('Enter to continue')
     os.system('python install.py')
 else:
     os.system('python install.py')
