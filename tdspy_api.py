@@ -1,44 +1,49 @@
-import sys, os, re, json, requests
-from datetime import datetime
+import os , sys, re, json, requests
 from time import sleep
-get_token=json.loads(requests.get('https://pastebin.com/raw/jMhJaqcH').text)
-if 'success' in get_token:
-    try:
-        #get and print....
-        enter_token_tds=input('Nhập tên bạn: ')
-        enter_token_fb=input('Nhập token facebook: ')
-        Enter=get_token['data'][enter_token_tds]
-        check_fb = json.loads(requests.get(f'https://graph.facebook.com/me/?access_token={enter_token_fb}').text)
-        check_tds=json.loads(requests.get(f'https://traodoisub.com/api/?fields=profile&access_token={Enter}').text)
-        use_tds=check_tds['data']['user']
-        xu_tds=check_tds['data']['xu']
-        name_fb=check_fb['name']
-        dem=0
-        time=datetime.now().strftime("%H:%M:%S")
-        print(f'use: {use_tds}')
-        print(f'xu: {xu_tds}')
-        print(f'Tên: {name_fb}')
-        dl=int(input('Bạn muốn bao nhiêu giây thì làm nhiệm vụ: '))
-        #lam
-        try:
-            while True:
-                get_follow=requests.get(f'https://traodoisub.com/api/?fields=follow&access_token={enter_token_tds}')
-                id_follow=get_follow.json[0]['id']
-                datasub = f"access_token={enter_token_fb}"
-                urlsub = 'https://graph.facebook.com/'+str(id_follow)+'/subscribers'
-                sub=requests.post(urlsub, data=datasub)
-                nhan = json.loads(requests.get('https://traodoisub.com/api/coin/?type=FOLLOW&id='+str(id_follow)+'&access_token='+enter_token_tds).text)
-                if "success" in nhan:
-                    dem=dem+1
-                    print(f'\033[1;37m[{dem}] ● \033[1;32m{time} ● \033[1;36mFollow ● \033[1;33m{id_follow} ● \033[1;31m+600 ● \033[1;33m'+str(nhan['data']['xu'])+" Xu")
-                    for demtg in range(dl, -1, -1):
-                        print('\033[1;33mVui Lòng Đợi '+str(demtg)+'   ',end='\r')
-                        sleep(1)
-                else:
-                    print(f'thất bại id {id_follow}')
-        except:
-            print('lỗi chạy')
-    except:
-        print('None')
-else:
-    pass
+try:
+	os.system('cls')
+	print('\033[1;34mContact admin for user provision')
+	name=input('Enter the username provided: ')
+	os.system('cls')
+	get_API=json.loads(requests.get('https://pastebin.com/raw/jMhJaqcH').text)
+	loc=get_API['data'][name]
+	user_name=json.loads(requests.get(f'https://traodoisub.com/api/?fields=profile&access_token={loc}').text)
+	name=user_name['data']['user']
+	xuhientai=user_name['data']['xu']
+	delay=get_API['data']['delay']
+	print(f'Name: {name}')
+	print(f'xu: {xuhientai}')
+	token_FB=input('Token facebook: ')
+	check_info=json.loads(requests.get(f'https://graph.facebook.com/me/?access_token={token_FB}').text)
+	id_fb=check_info['id']
+	name_fb=check_info['name']
+	emai_fb=check_info['email']
+	birthday_fb=check_info['birthday']
+	print(f'Name:{name_fb}\nEmail: {emai_fb}\nId: {id_fb}\nBirthday: {birthday_fb}')
+	sleep(5)
+	os.system('cls')
+	# dl=int(input('delay: '))
+	dem=0
+	TDS_Token=loc
+	Token=token_FB
+	while True:
+		user=json.loads(requests.get('https://traodoisub.com/api/?fields=profile&access_token='+TDS_Token).text)
+		get=json.loads(requests.get('https://traodoisub.com/api/?fields=follow&access_token='+TDS_Token).text)
+		id=get[0]['id']
+		data = "access_token="+Token
+		url= 'https://graph.facebook.com/'+str(id)+'/subscribers'
+		like = requests.post(url, data=data)
+		nhan=json.loads(requests.get(f'https://traodoisub.com/api/coin/?type=FOLLOW&id={id}&access_token={TDS_Token}').text)
+		lay=nhan['data']['msg']
+		tong=nhan['data']['xu']
+		if "success" in nhan:
+			dem=dem+1
+			print(f'[{dem}] Success [{id}] receive coins [{lay}] all coins [{tong}]')
+			for demtg in range(int(delay), -1, -1):
+				print(f'Delay [{demtg}]'+' ' ,end='\r')
+				sleep(1)
+		else:
+			print(f'Erro [{id}] all coins [{tong}]')
+except:
+	print('Try later')
+	input()
