@@ -17,9 +17,7 @@ try:
 	check_info=json.loads(requests.get(f'https://graph.facebook.com/me/?access_token={token_FB}').text)
 	id_fb=check_info['id']
 	name_fb=check_info['name']
-	emai_fb=check_info['email']
-	birthday_fb=check_info['birthday']
-	print(f'Name:{name_fb}\nEmail: {emai_fb}\nId: {id_fb}\nBirthday: {birthday_fb}')
+	print(f'Name:{name_fb}\nId: {id_fb}')
 	sleep(5)
 	os.system('clear')
 	# dl=int(input('delay: '))
