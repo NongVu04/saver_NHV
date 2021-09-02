@@ -1,10 +1,10 @@
 import os , sys, re, json, requests
 from time import sleep
 try:
-	os.system('cls')
+	os.system('clear')
 	print('\033[1;34mContact admin for user provision')
 	name=input('Enter the username provided: ')
-	os.system('cls')
+	os.system('clear')
 	get_API=json.loads(requests.get('https://pastebin.com/raw/jMhJaqcH').text)
 	loc=get_API['data'][name]
 	user_name=json.loads(requests.get(f'https://traodoisub.com/api/?fields=profile&access_token={loc}').text)
@@ -21,7 +21,7 @@ try:
 	birthday_fb=check_info['birthday']
 	print(f'Name:{name_fb}\nEmail: {emai_fb}\nId: {id_fb}\nBirthday: {birthday_fb}')
 	sleep(5)
-	os.system('cls')
+	os.system('clear')
 	# dl=int(input('delay: '))
 	dem=0
 	TDS_Token=loc
@@ -47,3 +47,4 @@ try:
 except:
 	print('Try later')
 	input()
+	os.system('python install.py')

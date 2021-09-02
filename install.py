@@ -52,6 +52,7 @@ print('Nhập [6] Truy cập web traodoisub.')
 print('Nhập [7] Nghe nhạc + Code dạo.')
 print('Nhập [8] Máy nghe nhạc.')
 print('Nhập [9] Để kiểm tra mạng.')
+print('Nhập [10] Đăng nhập tool admin cung cấp (Yêu cầu liên hệ admin)')
 nhap=input('Nhập: ')
 if nhap =='00':
     os.system('termux-open-url https://www.youtube.com/channel/UCAlq_Me8x_QGNHWvROkEAmg')
@@ -150,6 +151,9 @@ if nhap=='9':
     os.system('clear')
     os.system('speedtest-cli')
     input('Enter to continue')
+    os.system('python install.py')
+if nhap=='10':
+    os.system('python tdspy_api.py')
     os.system('python install.py')
 else:
     os.system('python install.py')
