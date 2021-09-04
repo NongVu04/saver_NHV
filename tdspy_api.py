@@ -11,6 +11,7 @@ try:
 	name=user_name['data']['user']
 	xuhientai=user_name['data']['xu']
 	delay=get_API['data']['delay']
+	# slep=get_API['data']['sleep']
 	print(f'Name: {name}')
 	print(f'xu: {xuhientai}')
 	token_FB=input('Token facebook: ')
@@ -40,9 +41,10 @@ try:
 			for demtg in range(int(delay), -1, -1):
 				print(f'Delay [{demtg}]'+' ' ,end='\r')
 				sleep(1)
+		# if dem==int(slep):
+		# 	break
 		else:
-			print(f'Erro [{id}] all coins [{tong}]')
+			print(f'Erro [{id}] all coins [{tong}]'+ '',end='\r')
 except:
 	print('Try later')
-	input()
-	os.system('python install.py')
+	os.system('python tdspy_api.py')
