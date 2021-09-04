@@ -1,3 +1,4 @@
+import os,sys,re,json
 try:
     import requests
     pass
@@ -5,7 +6,6 @@ except:
     os.system('pip install requests&&pkg install sox -y&&pip install speedtest-cli')
     os.system('termux-setup-storage -y&&pkg install php')
     pass
-import os,sys,re,json
 from time import sleep
 from datetime import datetime
 from random import randint
