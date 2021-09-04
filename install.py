@@ -1,14 +1,13 @@
+import os,sys,re,json
+from time import sleep
+from datetime import datetime
+from random import randint
 try:
-    import os,sys,re,json
-    from time import sleep
-    from datetime import datetime
-    from random import randint
-    print('\033[1;32m')
     import requests
 except:
     os.system('pip install requests&&pkg install sox -y&&pip install speedtest-cli')
     os.system('termux-setup-storage -y&&pkg install php')
-
+print('\033[1;32m')
 sv="""\033[1;31m
 ╔══════════════════════════════════════════════════════╗
 ║                    Update Saver                      ║
@@ -21,6 +20,7 @@ svo="""\033[1;34m
 ╚══════════════════════════════════════════════════════╝
 """
 # os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
+import requests
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 saver_new=requests.get('https://pastebin.com/raw/Em2J0Xiq').text
