@@ -1,16 +1,16 @@
-import os,sys,re,json
-from time import sleep
-from datetime import datetime
-from random import randint
-print('\033[1;32m')
 try:
+    import requests
     pass
 except:
     os.system('pip install requests&&pkg install sox -y&&pip install speedtest-cli')
     os.system('termux-setup-storage -y&&pkg install php')
     pass
+import os,sys,re,json
+from time import sleep
+from datetime import datetime
+from random import randint
+print('\033[1;32m')
 # os.system('play ting.mp3')
-import requests
 sv="""\033[1;31m
 ╔══════════════════════════════════════════════════════╗
 ║                    Update Saver                      ║
