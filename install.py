@@ -22,6 +22,7 @@ svo="""\033[1;34m
 ║              \033[1;30mSaver Đã Được Kích Hoạt\033[1;34m                 ║
 ╚══════════════════════════════════════════════════════╝
 """
+import requests
 # os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
