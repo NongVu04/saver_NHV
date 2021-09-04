@@ -78,7 +78,7 @@ if nhap == '4':
 if nhap == '5':
     try:
         os.system('python2 endec.py')
-        os.system('python install.py')
+        # os.system('python install.py')
     except:
         os.system('pkg install python2')
         os.system('pkg install wget')
