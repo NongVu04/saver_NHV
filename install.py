@@ -32,6 +32,7 @@ else:
     os.system('play ting.mp3')
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
 time=datetime.now().strftime("%H:%M:%S")
+# for loat in range ()
 print(f'Access time {time} According to Nong Hoang Vu')
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
 print('\033[1;30mNhập [sos] để nhận sự hỗi trợ')
