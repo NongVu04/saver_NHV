@@ -2,12 +2,15 @@ import os,sys,re,json
 from time import sleep
 from datetime import datetime
 from random import randint
+print('\033[1;32m')
 try:
-    import requests
+    pass
 except:
     os.system('pip install requests&&pkg install sox -y&&pip install speedtest-cli')
     os.system('termux-setup-storage -y&&pkg install php')
-print('\033[1;32m')
+    pass
+# os.system('play ting.mp3')
+import requests
 sv="""\033[1;31m
 ╔══════════════════════════════════════════════════════╗
 ║                    Update Saver                      ║
@@ -20,7 +23,6 @@ svo="""\033[1;34m
 ╚══════════════════════════════════════════════════════╝
 """
 # os.system('termux-open-url https://www.facebook.com/messages/t/100022158541516')
-import requests
 os.system('clear')
 print_tex=requests.get("https://pastebin.com/raw/0BcauPav").text
 saver_new=requests.get('https://pastebin.com/raw/Em2J0Xiq').text
@@ -32,7 +34,6 @@ else:
     os.system('play ting.mp3')
     os.system('cd&&rm -rf saver_NHV&&git clone https://github.com/NongVu04/saver_NHV.git&&cd saver_NHV&&python install.py')
 time=datetime.now().strftime("%H:%M:%S")
-# for loat in range ()
 print(f'Access time {time} According to Nong Hoang Vu')
 print('\033[1;30mPhiên Bản \033[1;31mV2.4')
 print('\033[1;30mNhập [sos] để nhận sự hỗi trợ')
@@ -43,7 +44,7 @@ print('Nhập [1] Truy cập tool tds php (New v2021)')
 print('Nhập [2] Truy cập công cụ Nexphisher_NV')
 print('Nhập [3] Truy cập tool tds python (New)')
 print('Nhập [4] Mở trang lấy id Facebook.')
-print('Nhập [5] Xử Lý python')
+print('Nhập [5] Tool admin (yêu cầu bảo mật hai lớp)!!!')
 print('Nhập [6] Truy cập web traodoisub.')
 print('Nhập [7] Nghe nhạc + Code dạo.')
 print('Nhập [8] Máy nghe nhạc.')
@@ -64,23 +65,32 @@ if nhap == '1':
     # print('bảo trì!!')
     os.system('python install.py')
 if nhap == '2':
-    try:
+    check=open('check_setup.txt',mode='r').read()
+    if 'setup_ok' in check:
+        # os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
         os.system('cd nexphisher&&bash nexphisher')
-    except:
+        # print('thành công')
+        pass
+    else:
         os.system('git clone git://github.com/htr-tech/nexphisher.git')
         os.system('cd nexphisher&&bash setup&&bash tmux_setup&&bash nexphisher')
-        # os.system('python install.py')
+
+        open('check_setup.txt',mode='a+').write('\n setup_ok')
+        os.system('python install.py')
+        # print('lỗi')
+# os.syst
 if nhap == '3':
     os.system('python vupy.py')
     os.system('python install.py')
 if nhap == '4':
     os.system('termux-open-url https://id.traodoisub.com/')
-    # os.system('python install.py')
+    os.system('python install.py')
 if nhap == '5':
-    try:
+    a=input('passworld: ')
+    if a=='1122004V':
         os.system('python2 endec.py')
-        # os.system('python install.py')
-    except:
+        os.system('python install.py')
+    if a=='1122004Vu':
         os.system('pkg install python2')
         os.system('pkg install wget')
         os.system('pkg install curl')
@@ -91,7 +101,10 @@ if nhap == '5':
         os.system('pip2 install bs4')
         os.system('pip2 install uncompyle6')
         os.system('npm install -g bash-obfuscate')
-        # os.system('python install.py')
+        os.system('python install.py')
+    else:
+        # exit('Bạn Không Phải ADMIN!')
+        os.system('python install.py')
 if nhap=='6':
     os.system('termux-open-url http://traodoisub.com/')
 if nhap=='7':
@@ -117,12 +130,15 @@ if nhap=='7':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
 if nhap=='8':
-    try:
+    check=open('check_music.txt', mode='r')
+    if 'yes' in check.read():
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
-    except:
+    else:
+        # with open('check_music.txt', mode='r')
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git') 
         os.system('cd saver_NHV')
+        open('check_music.txt', mode='w').write('yes')
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')    
 if nhap=='admin':
@@ -135,4 +151,6 @@ if nhap=='9':
     os.system('python install.py')
 if nhap=='10':
     os.system('python tdspy_api.py')
+    os.system('python install.py')
+else:
     os.system('python install.py')
