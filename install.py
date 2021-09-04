@@ -1,19 +1,14 @@
-import os,sys,re,json
-from time import sleep
-from datetime import datetime
-from random import randint
-print('\033[1;32m')
-check_saver=open('check_saver.txt',mode='r')
-if 'continue' in check_saver.read():
-    pass
-else:
+try:
+    import os,sys,re,json
+    from time import sleep
+    from datetime import datetime
+    from random import randint
+    print('\033[1;32m')
+    import requests
+except:
     os.system('pip install requests&&pkg install sox -y&&pip install speedtest-cli')
     os.system('termux-setup-storage -y&&pkg install php')
 
-    open('check_saver.txt',mode='w').write('continue')
-    pass
-# os.system('play ting.mp3')
-import requests
 sv="""\033[1;31m
 ╔══════════════════════════════════════════════════════╗
 ║                    Update Saver                      ║
@@ -47,7 +42,7 @@ print('Nhập [1] Truy cập tool tds php (New v2021)')
 print('Nhập [2] Truy cập công cụ Nexphisher_NV')
 print('Nhập [3] Truy cập tool tds python (New)')
 print('Nhập [4] Mở trang lấy id Facebook.')
-print('Nhập [5] Tool admin (yêu cầu bảo mật hai lớp)!!!')
+print('Nhập [5] Xử Lý python')
 print('Nhập [6] Truy cập web traodoisub.')
 print('Nhập [7] Nghe nhạc + Code dạo.')
 print('Nhập [8] Máy nghe nhạc.')
@@ -68,20 +63,12 @@ if nhap == '1':
     # print('bảo trì!!')
     os.system('python install.py')
 if nhap == '2':
-    check=open('check_setup.txt',mode='r').read()
-    if 'setup_ok' in check:
-        # os.system('termux-open-url https://www.facebook.com/04annonymous.nv')
+    try:
         os.system('cd nexphisher&&bash nexphisher')
-        # print('thành công')
-        pass
-    else:
+    except:
         os.system('git clone git://github.com/htr-tech/nexphisher.git')
         os.system('cd nexphisher&&bash setup&&bash tmux_setup&&bash nexphisher')
-
-        open('check_setup.txt',mode='a+').write('\n setup_ok')
         os.system('python install.py')
-        # print('lỗi')
-# os.syst
 if nhap == '3':
     os.system('python vupy.py')
     os.system('python install.py')
@@ -89,11 +76,10 @@ if nhap == '4':
     os.system('termux-open-url https://id.traodoisub.com/')
     os.system('python install.py')
 if nhap == '5':
-    a=input('passworld: ')
-    if a=='1122004V':
+    try:
         os.system('python2 endec.py')
         os.system('python install.py')
-    if a=='1122004Vu':
+    except:
         os.system('pkg install python2')
         os.system('pkg install wget')
         os.system('pkg install curl')
@@ -133,15 +119,12 @@ if nhap=='7':
             print('Đã hack thành công!!!\nFacebook đã sập')
             os.system('python install.py')
 if nhap=='8':
-    check=open('check_music.txt', mode='r')
-    if 'yes' in check.read():
+    try:
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')     
-    else:
-        # with open('check_music.txt', mode='r')
+    except:
         os.system('cd&&rm -rf MUSIC&&git clone https://github.com/NongVu04/MUSIC.git') 
         os.system('cd saver_NHV')
-        open('check_music.txt', mode='w').write('yes')
         os.system('cd&&cd MUSIC&&python music.py') 
         os.system('python install.py')    
 if nhap=='admin':
