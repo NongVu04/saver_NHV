@@ -136,5 +136,3 @@ if nhap=='9':
 if nhap=='10':
     os.system('python tdspy_api.py')
     os.system('python install.py')
-else:
-    os.system('python install.py')
