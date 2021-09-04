@@ -3,7 +3,7 @@
     "data": {
         "vu": "TDSQfiATMyVmdlNnI6IiclZXZzJCLiYFNwAjMyETMiojIyV2c1Jye",
         "men": "TDS0nIxEjclZXZzJiOiIXZ2V2ciwiIuVWbuYFSOJXZ2F2UiojIyV2c1Jye",
-        "delay": "10"
-        "sleep": "2"
+        "delay": "10",
+        "ton": "TDS0nI0IXZ2V2ciojIyVmdlNnIsIiMwQDMu9GdiojIyV2c1Jye"
     }
 }
