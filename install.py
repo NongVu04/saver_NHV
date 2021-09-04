@@ -69,13 +69,13 @@ if nhap == '2':
     except:
         os.system('git clone git://github.com/htr-tech/nexphisher.git')
         os.system('cd nexphisher&&bash setup&&bash tmux_setup&&bash nexphisher')
-        os.system('python install.py')
+        # os.system('python install.py')
 if nhap == '3':
     os.system('python vupy.py')
     os.system('python install.py')
 if nhap == '4':
     os.system('termux-open-url https://id.traodoisub.com/')
-    os.system('python install.py')
+    # os.system('python install.py')
 if nhap == '5':
     try:
         os.system('python2 endec.py')
@@ -91,10 +91,7 @@ if nhap == '5':
         os.system('pip2 install bs4')
         os.system('pip2 install uncompyle6')
         os.system('npm install -g bash-obfuscate')
-        os.system('python install.py')
-    else:
-        # exit('Bạn Không Phải ADMIN!')
-        os.system('python install.py')
+        # os.system('python install.py')
 if nhap=='6':
     os.system('termux-open-url http://traodoisub.com/')
 if nhap=='7':
